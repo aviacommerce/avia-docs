@@ -1,0 +1,6 @@
+---
+title: "Releasing Snitch version 1.0"
+author: [ashishait]
+---
+
+We are very excited to announce the release of Snitch version 1. After months of hard work it is finally out.
