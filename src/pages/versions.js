@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2015-present, Aviabird
  *
- * @emails snitch-core
+ * @emails avia-core
  *
  */
 
@@ -18,13 +18,13 @@ const Versions = () => (
   <Container>
     <div css={sharedStyles.articleLayout.container}>
       <div css={sharedStyles.articleLayout.content}>
-        <Header>Snitch Versions</Header>
-        <TitleAndMetaTags title="Snitch - Versions" />
+        <Header>AviaCommerce Versions</Header>
+        <TitleAndMetaTags title="AviaCommerce - Versions" />
         <div css={sharedStyles.markdown}>
           <p>
-            A complete release history for Snitch is available{' '}
+            A complete release history for AviaCommerce is available{' '}
             <a
-              href="https://github.com/aviabird/snitch/releases"
+              href="https://github.com/aviabird/avia/releases"
               target="_blank"
               rel="noopener">
               on GitHub

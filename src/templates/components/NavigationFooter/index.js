@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2015-present, Aviabird
  *
- * @emails snitch-core
+ * @emails avia-core
  */
 
 import NavigationFooter from './NavigationFooter';

@@ -9,4 +9,4 @@ redirect_from:
   - "contributing/codebase-overview.html"
 ---
 
-This section will give you an overview of the Snitch codebase organization, its conventions, and the implementation.
+This section will give you an overview of the AviaCommerce codebase organization, its conventions, and the implementation.

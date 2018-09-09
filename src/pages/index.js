@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2015-present, Aviabird
  *
- * @emails snitch-core
+ * @emails avia-core
  */
 
 import ButtonLink from 'components/ButtonLink';
@@ -76,7 +76,7 @@ class Home extends Component {
     return (
       <div css={{width: '100%'}}>
         <TitleAndMetaTags
-          title="Snitch &ndash; Open Source E-Commerce framework"
+          title="AviaCommerce &ndash; Open Source E-Commerce framework"
           ogUrl={createOgUrl('index.html')}
         />
         <header
@@ -135,7 +135,7 @@ class Home extends Component {
                       fontSize: 60,
                     },
                   }}>
-                  Snitch
+                  AviaCommerce
                 </h1>
                 <p
                   css={{
@@ -175,7 +175,7 @@ class Home extends Component {
                   </CtaItem>
                   <CtaItem>
                     <ButtonLink
-                      to="/blog/2018/08/02/snitch-vision.html"
+                      to="/blog/2018/08/02/avia-vision.html"
                       type="secondary">
                       Vision for Project
                     </ButtonLink>

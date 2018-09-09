@@ -8,7 +8,7 @@ redirect_from:
   - "support.html"
 ---
 
-Some places where you can get help for Snitch
+Some places where you can get help for AviaCommerce
 
-* [Gitter Chat](https://gitter.im/aviabird/snitch)
+* [Gitter Chat](https://gitter.im/aviabird/AviaCommerce)
 * Email - `hello@aviabird.com`

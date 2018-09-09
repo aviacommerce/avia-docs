@@ -9,4 +9,4 @@ redirect_from:
   - "tips/introduction.html"
 ---
 
-This guide should help developers get started with contributing to snitch.
+This guide should help developers get started with contributing to avia.

@@ -8,9 +8,9 @@ redirect_from:
   - "docs/index.html"
 ---
 
-This page is an overview of the Snitch documentation and related resources.
+This page is an overview of the AviaCommerce documentation and related resources.
 
-**Snitch** is a framework for building ecommerce applications. Check docs guide [our homepage](/docs/).
+**AviaCommerce** is a framework for building ecommerce applications. Check docs guide [our homepage](/docs/).
 
 ---
 

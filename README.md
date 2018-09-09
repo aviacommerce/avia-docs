@@ -1,6 +1,6 @@
-# Snitch Docs
+# AviaCommerce Docs
 
-This repo contains the source code and documentation powering [Snitch Docs Website](https://snitchcommerce.org/).
+This repo contains the source code and documentation powering [AviaCommerce Docs Website](https://aviacommerce.org/).
 
 ## Getting started
 
@@ -10,7 +10,7 @@ This repo contains the source code and documentation powering [Snitch Docs Websi
 1. Node: any 8.x version starting with 8.4.0 or greater
 1. Yarn: See [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/)
 1. A fork of the repo (for any contributions)
-1. A clone of the [snitch_docs repo](https://github.com/aviabird/snitch_docs) on your local machine
+1. A clone of the [snitch_docs repo](https://github.com/aviacommerce/avia_docs) on your local machine
 
 ### Installation
 

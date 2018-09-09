@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2015-present, Aviabird
  *
- * @emails snitch-core
+ * @emails avia-core
  *
  */
 
@@ -86,7 +86,7 @@ const Header = ({location}: {location: Location}) => (
                 border: 0,
               },
             }}>
-            Snitch
+            AviaCommerce
           </span>
         </Link>
 
@@ -177,7 +177,7 @@ const Header = ({location}: {location: Location}) => (
                 borderRadius: 15,
               },
             }}
-            href="https://github.com/aviabird/snitch/"
+            href="https://github.com/aviabird/avia/"
             target="_blank"
             rel="noopener">
             GitHub

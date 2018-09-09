@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2015-present, Aviabird
  *
- * @emails snitch-core
+ * @emails avia-core
  *
  */
 
@@ -50,7 +50,7 @@ const ErrorPage = ({data, location}: Props) => (
             title={data.markdownRemark.frontmatter.title}
           />
           <TitleAndMetaTags
-            title={`Snitch - ${data.markdownRemark.frontmatter.title}`}
+            title={`AviaCommerce - ${data.markdownRemark.frontmatter.title}`}
           />
 
           <div css={sharedStyles.articleLayout.content}>

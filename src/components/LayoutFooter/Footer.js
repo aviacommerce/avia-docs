@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2015-present, Aviabird
  *
- * @emails snitch-core
+ * @emails avia-core
  *
  */
 
@@ -75,19 +75,19 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
             <MetaTitle onDark={true}>Channels</MetaTitle>
             <ExternalFooterLink
-              href="https://github.com/aviaibrd/snitch"
+              href="https://github.com/aviaibrd/avia"
               target="_blank"
               rel="noopener">
               GitHub
             </ExternalFooterLink>
             <ExternalFooterLink
-              href="https://gitter.im/aviabird/snitch"
+              href="https://gitter.im/aviabird/avia"
               target="_blank"
               rel="noopener">
               Gitter Chat
             </ExternalFooterLink>
             {/* <ExternalFooterLink
-              href="http://stackoverflow.com/questions/tagged/snitch"
+              href="http://stackoverflow.com/questions/tagged/avia"
               target="_blank"
               rel="noopener">
               Stack Overflow
