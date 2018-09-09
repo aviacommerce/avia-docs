@@ -81,7 +81,7 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               GitHub
             </ExternalFooterLink>
             <ExternalFooterLink
-              href="https://gitter.im/aviabird/avia"
+              href="https://gitter.im/avia-commerce"
               target="_blank"
               rel="noopener">
               Gitter Chat

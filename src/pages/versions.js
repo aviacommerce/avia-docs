@@ -24,7 +24,7 @@ const Versions = () => (
           <p>
             A complete release history for AviaCommerce is available{' '}
             <a
-              href="https://github.com/aviabird/avia/releases"
+              href="https://github.com/aviacommerce/avia/releases"
               target="_blank"
               rel="noopener">
               on GitHub
