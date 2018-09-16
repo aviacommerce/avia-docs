@@ -177,7 +177,7 @@ const Header = ({location}: {location: Location}) => (
                 borderRadius: 15,
               },
             }}
-            href="https://github.com/aviacommerce/avia/"
+            href="https://github.com/aviacommerce/"
             target="_blank"
             rel="noopener">
             GitHub
