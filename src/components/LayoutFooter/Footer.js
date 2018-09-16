@@ -75,6 +75,12 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
             <MetaTitle onDark={true}>Channels</MetaTitle>
             <ExternalFooterLink
+              href="https://www.demo.aviacommerce.org"
+              target="_blank"
+              rel="noopener">
+              Demo
+            </ExternalFooterLink>
+            <ExternalFooterLink
               href="https://github.com/aviaibrd/avia"
               target="_blank"
               rel="noopener">
@@ -86,12 +92,6 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               rel="noopener">
               Gitter Chat
             </ExternalFooterLink>
-            {/* <ExternalFooterLink
-              href="http://stackoverflow.com/questions/tagged/avia"
-              target="_blank"
-              rel="noopener">
-              Stack Overflow
-            </ExternalFooterLink> */}
           </FooterNav>
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
             <MetaTitle onDark={true}>Community</MetaTitle>
