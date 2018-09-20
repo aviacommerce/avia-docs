@@ -1,11 +1,8 @@
 ---
-id: getting-started
-title: Getting Started
-permalink: docs/getting-started.html
-next: frontend-install.html
-redirect_from:
-  - "docs/"
-  - "docs/index.html"
+id: backend-install
+title: Backend Installation
+permalink: docs/backend-install.html
+next: deployment.html
 ---
 
 This page is an overview of the AviaCommerce documentation and related resources.
