@@ -39,20 +39,20 @@
       title: Payment State Machine
 - title: API Reference
   items:
-    - id: apis
-      title: Api Spec 
+    - id: apis-getting-started
+      title: Getting started
     - id: products-api
-      title: Products
+      title: Products API
     - id: orders-api
-      title: Orders
+      title: Orders API
     - id: line-items-api
-      title: Line Items
+      title: Line Items API
     - id: checkouts-api
-      title: Checkouts
+      title: Checkouts API
     - id: payments-api
-      title: Payments
+      title: Payments API
     - id: addresses-api
-      title: Addresses
+      title: Addresses API
 - title: Contributing
   items:
   - id: how-to-contribute
