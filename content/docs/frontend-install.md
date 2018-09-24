@@ -25,7 +25,7 @@ next: backend-install.html
 - command `node server.js` will start the ssr server.
 - you can also use `yarn start:ssr:prod-ng-spree` to start ssr server directly.
 
-### Theming
+### Themeing
 ----
 - The app has multiple themes that can be enabled by uncommenting the theme import in `src/app/shared/scss/_selected_theme_variables.scss` and `src/app/shared/scss/_themes.scss`.
 - Current deployed demo app has default theme. Where as master branch has custom theme. Try uncommenting the one you want and comment others.
@@ -59,6 +59,5 @@ next: backend-install.html
         // @import './custom_themes/custom4/_custom4.scss';
         // @import './custom_themes/custom5/_custom5.scss'
     ```
-    ```css
-        DO NOT IMPORT THE THEME INSIDE THE COMPONENTS TO USE VARIABLES. AS THAT WILL INCLUDE ENTIRE CSS BUILD INSIDE THAT COMPONENT.
-    ```
+
+    > DO NOT IMPORT THE THEME INSIDE THE COMPONENTS TO USE VARIABLES. AS THAT WILL INCLUDE ENTIRE THEME INSIDE THAT COMPONENT. RESULTING IN BIGGER BUILDS.
