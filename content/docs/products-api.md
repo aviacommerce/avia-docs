@@ -1,6 +1,6 @@
 ---
 id: products-api
-title: Products StoreFront API
+title: Products API
 layout: docs
 category: Reference
 permalink: docs/products-api.html
@@ -72,6 +72,9 @@ Returns the products and its attributes. This does not include the variants by d
 
 </details>
 
+
+
+-----
 ## Show
 
 To view the details of a product make this request.
@@ -397,6 +400,8 @@ where `slug` is a unique product identifier. Read more about slugs [here](https:
 ```
 </details>
 
+
+-----
 ## Search
 
 To search a product by it's property or any other attribute use this API. 
