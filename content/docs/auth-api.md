@@ -43,10 +43,8 @@ Accept: application/vnd.api+json
 
 #### Response
 
-`STATUS 200`
-
 <details>
-<summary>Response</summary>
+<summary>Example response (STATUS: 200 OK)</summary>
 <br>
 
 ```json
@@ -97,10 +95,8 @@ Accept: application/vnd.api+json
 
 #### Response
 
-`STATUS 200`
-
 <details>
-<summary>Response</summary>
+<summary>Example response (STATUS: 200 OK)</summary>
 <br>
 
 ```json
@@ -134,6 +130,6 @@ Authorization: Bearer token
 
 #### Response
 
-`STATUS 204`
+Example response (STATUS: 204 OK)
 
 NA

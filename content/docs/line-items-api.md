@@ -53,10 +53,8 @@ Authorization: Bearer token
 
 #### Response
 
-`STATUS 200`
-
 <details>
-<summary>Response</summary>
+<summary>Example response (STATUS: 200 OK)</summary>
 <br>
 
 ```json
@@ -212,6 +210,6 @@ Authorization: Bearer token
 
 #### Response
 
-Status 204
+Example response (STATUS: 204 OK)
 
 NA
