@@ -9,7 +9,7 @@ next: orders-api.html
 
 ## Index
 
-Lists all the `active` products for all the requests. User does not need to be authenticated to make this call.
+Lists all the `active` products for all the requests. User does not need to be authenticated to make this call. Product table has a `is_active` flag which determines if the product goes live on the store-front.
 
 ### Request
 
@@ -25,8 +25,6 @@ Accept: application/vnd.api+json
 |:--------------:|:----------------------------------------------------------:|:--------------:|:---------:|
 | `page[limit]`  | per page count                                             | query          | string    |
 | `page[offset]` | page number                                                | query          | string    |
-
-
 
 Products are paginated and can be iterated through by passing along a page parameter:
 
@@ -97,6 +95,8 @@ where `slug` is a unique product identifier. Read more about slugs [here](https:
 
 
 ### Response
+
+Returns the product struct with variants.
 
 <details><summary>Example response (STATUS: 200 OK)</summary>
 
@@ -426,8 +426,7 @@ Accept: application/vnd.api+json
 The search results are paginated.
 
 ```
-GET /api/v1/products?filter[name]=broomstick&page[limit]=2&page[offset]=2"
-
+GET /api/v1/products?filter[name]=broomstick&page[limit]=2&page[offset]=2
 ```
 
 ### Response
