@@ -41,6 +41,8 @@
   items:
     - id: apis-getting-started
       title: Getting started
+    - id: auth-api
+      title: Auth API
     - id: products-api
       title: Products API
     - id: orders-api
