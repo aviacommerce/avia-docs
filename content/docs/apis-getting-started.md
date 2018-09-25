@@ -21,11 +21,12 @@ The Avia web API framework provides integrators and developers the means to use 
 * Customer API facing endpoints.
 * The framework is based on CRUD(create, read, update, delete) & search model.
 
-At the momemt, there is just support for store-front endpoints and actions. We'll be supporting endpoints for admin app at a later stage.
-
 >Note
 >
->This same API powers the avia storefront at the moment.
+>We just support endpoints and actions for store-front **NOT** the admin functionality. 
+>The avia admin interface should be sufficient for a long time and hence the 
+>need for admin endpoints doesn't make much sense at this moment. However, we
+>are open to considering it in case there is good use case for it.
 
 ## What can I do with the Avia web APIs?
 

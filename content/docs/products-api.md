@@ -7,15 +7,17 @@ permalink: docs/products-api.html
 next: orders-api.html
 ---
 
->Note
->
-> Content type for all the requests should be `application/vnd.api+json`.
-
 ## Index
 
 Lists all the `active` products for all the requests. User does not need to be authenticated to make this call.
 
 ### Request
+
+```
+GET /api/v1/products
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+```
 
 #### Params
 
@@ -25,23 +27,18 @@ Lists all the `active` products for all the requests. User does not need to be a
 | `page[offset]` | page number                                                | query          | string    |
 
 
-```
-GET /api/v1/products
-```
 
 Products are paginated and can be iterated through by passing along a page parameter:
 
 ```
-GET /api/v1/products?page[limit]=2&page[offset]=2",
+GET /api/v1/products?page[limit]=2&page[offset]=2"
 ```
 
 ### Response
 
 Returns the products and its attributes. This does not include the variants by default.
 
-`STATUS 200`
-
-<details><summary>Response</summary>
+<details><summary>Example response (STATUS: 200 OK)</summary>
 
 ```json
 "data": [
@@ -83,6 +80,8 @@ To view the details of a product make this request.
 
 ```
 GET /api/v1/products/{slug}
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 ```
 
 where `slug` is a unique product identifier. Read more about slugs [here](https://confluence.atlassian.com/bitbucket/what-is-a-slug-224395839.html).
@@ -94,11 +93,9 @@ where `slug` is a unique product identifier. Read more about slugs [here](https:
 | `slug`         | a unique product identifier                                | query          | string    |
 
 
-#### Request
-
 ### Response
 
-<details><summary>Response</summary>
+<details><summary>Example response (STATUS: 200 OK)</summary>
 
 ```
 {
@@ -402,24 +399,35 @@ where `slug` is a unique product identifier. Read more about slugs [here](https:
 
 ## Search
 
-To search for a particular product, make a request like this:
+To search a product by it's property or any other attribute use this API. 
 
 ### Request
 
 ```
-GET /api/v1/products?q[name_cont]=broomstick
+GET /api/v1/products?filter[name]=broomstick
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 ```
+
+#### Params
 
 | Parameter      | Description                            | Parameter Type | Data Type |
 |:--------------:|:--------------------------------------:|:--------------:|:---------:|
 | `filter[name]` | `name` can be any field to search with | query          | string    | 
+| `page[limit]`  | per page count                         | query          | string    |
+| `page[offset]` | page number                            | query          | string    |
 
 
 The search results are paginated.
 
+```
+GET /api/v1/products?filter[name]=broomstick&page[limit]=2&page[offset]=2"
+
+```
+
 ### Response
 
-<details><summary>Response</summary>
+<details><summary>Example response (STATUS: 200 OK)</summary>
 
 ```
 {
