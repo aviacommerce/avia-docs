@@ -39,3 +39,11 @@ There are many use cases for the web API's. For example:
 ## How do I get started?
 
 Cloning the [aviacommerce](https://github.com/aviacommerce/avia) repo from github and [installation](/docs/backend-install.html) would be the way to get started with testing and then consuming the API's.
+
+### Postman collection
+
+The api's are also published as postman collection. It can be accessed [here](https://documenter.getpostman.com/view/4497317/RWaPuS6t). 
+
+>Note
+>
+>We plan to have better documentation soon. Something like swagger or apiary.

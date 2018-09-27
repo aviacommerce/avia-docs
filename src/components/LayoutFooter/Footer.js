@@ -81,7 +81,7 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               Demo
             </ExternalFooterLink>
             <ExternalFooterLink
-              href="https://github.com/aviaibrd/avia"
+              href="https://github.com/aviacommerce/avia"
               target="_blank"
               rel="noopener">
               GitHub
