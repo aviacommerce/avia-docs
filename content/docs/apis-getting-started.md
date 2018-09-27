@@ -4,8 +4,7 @@ title: Getting started with Avia APIs
 layout: docs
 category: Reference
 permalink: docs/apis-getting-started.html
-next: products-api.html
-previous: payment-state-machine.html
+next: auth-api.html
 
 ---
 
@@ -23,8 +22,8 @@ The Avia web API framework provides integrators and developers the means to use 
 
 >Note
 >
->We just support endpoints and actions for store-front **NOT** the admin functionality. 
->The avia admin interface should be sufficient for a long time and hence the 
+>We just support endpoints and actions for store-front **NOT** the admin functionality.
+>The avia admin interface should be sufficient for a long time and hence the
 >need for admin endpoints doesn't make much sense at this moment. However, we
 >are open to considering it in case there is good use case for it.
 

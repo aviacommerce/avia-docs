@@ -4,6 +4,7 @@ title: Auth API
 layout: docs
 category: Reference
 permalink: docs/auth-api.html
+next: products-api.html
 ---
 
 ## Signup

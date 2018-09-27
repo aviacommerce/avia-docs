@@ -404,7 +404,7 @@ Returns the product struct with variants.
 -----
 ## Search
 
-To search a product by it's property or any other attribute use this API. 
+To search a product by it's property or any other attribute use this API.
 
 ### Request
 
@@ -418,7 +418,7 @@ Accept: application/vnd.api+json
 
 | Parameter      | Description                            | Parameter Type | Data Type |
 |:--------------:|:--------------------------------------:|:--------------:|:---------:|
-| `filter[name]` | `name` can be any field to search with | query          | string    | 
+| `filter[name]` | `name` can be any field to search with | query          | string    |
 | `page[limit]`  | per page count                         | query          | string    |
 | `page[offset]` | page number                            | query          | string    |
 
@@ -554,4 +554,3 @@ GET /api/v1/products?filter[name]=broomstick&page[limit]=2&page[offset]=2
 ```
 
 </details>
-
