@@ -22,22 +22,22 @@ Authorization: Bearer token
 
 ```json
 {
-  "data":{
-    "type":"line_item",
-    "attributes":{
-      "quantity":2
+  "data": {
+    "type": "line_item",
+    "attributes": {
+      "quantity": 1
     },
-    "relationships":{
-      "order":{
-        "data":{
-          "id":4,
-          "type":"order"
+    "relationships": {
+      "order": {
+        "data": {
+          "id": 4,
+          "type": "order"
         }
       },
-      "product":{
-        "data":{
-          "id":11,
-          "type":"product"
+      "product": {
+        "data": {
+          "id": 14,
+          "type": "product"
         }
       }
     }
@@ -59,123 +59,118 @@ Authorization: Bearer token
 
 ```json
 {
-  "data":{
-    "attributes":{
-      "adjustment_total":null,
-      "billing_address":null,
-      "item_count":2,
-      "number":"P1W1nDW7qaMynoxSN54~b",
-      "order_total_amount":{
-        "amount":"118.00",
-        "currency":"USD"
+  "data": {
+    "attributes": {
+      "adjustment_total": null,
+      "billing_address": null,
+      "item_count": 1,
+      "number": "Bu1sAJDu1YhtsRHl7~fne",
+      "order_total_amount": {
+        "amount": "1000.00",
+        "currency": "USD"
       },
-      "promot_total":null,
-      "shipping_address":null,
-      "state":"cart",
-      "user_id":4
+      "promot_total": null,
+      "shipping_address": null,
+      "state": "cart",
+      "user_id": 4
     },
-    "id":"4",
-    "links":{
-      "self":"/orders/4"
+    "id": "4",
+    "links": {
+      "self": "/orders/4"
     },
-    "relationships":{
-      "line_items":{
-        "data":[
+    "relationships": {
+      "line_items": {
+        "data": [
           {
-            "id":"8",
-            "type":"line_item"
+            "id": "9",
+            "type": "line_item"
           }
         ]
       },
-      "packages":{
-
-      },
-      "payments":{
-
-      }
+      "packages": {},
+      "payments": {}
     },
-    "type":"order"
+    "type": "order"
   },
-  "included":[
+  "included": [
     {
-      "attributes":{
-        "id":8,
-        "product_id":11,
-        "quantity":2,
-        "total_price":"118.00",
-        "unit_price":{
-          "amount":"59.00",
-          "currency":"USD"
+      "attributes": {
+        "id": 9,
+        "product_id": 14,
+        "quantity": 1,
+        "total_price": "1000.00",
+        "unit_price": {
+          "amount": "1000.00",
+          "currency": "USD"
         }
       },
-      "id":"8",
-      "links":{
-        "self":"/line_items/8"
+      "id": "9",
+      "links": {
+        "self": "/line_items/9"
       },
-      "relationships":{
-        "product":{
-          "data":{
-            "id":"11",
-            "type":"product"
+      "relationships": {
+        "product": {
+          "data": {
+            "id": "14",
+            "type": "product"
           }
         }
       },
-      "type":"line_item"
+      "type": "line_item"
     },
     {
-      "attributes":{
-        "available_on":null,
-        "deleted_at":null,
-        "description":"This Hogwarts School Trunk has been crafted to resemble those used by Hogwarts students for travel on the Hogwarts Express. This trunk also comes with a Personalised Hogwarts Acceptance Letter.\r\n\r\nThe Hogwarts School Trunk measures 45cm x 30cm x 23cm and features a carry handle and clasp. The Hogwarts school crest is printed on the top of the trunk, and feature custom initials on the side.",
-        "discontinue_on":null,
-        "images":[
-
+      "attributes": {
+        "available_on": null,
+        "deleted_at": null,
+        "description": "\"This ...is the Golden Snitch, and it's the most important ball of the lot. It's very hard to catch because it's so fast and difficult to see. It's the Seeker's job to catch it.\"",
+        "discontinue_on": null,
+        "images": [
+          {
+            "product_url": "https://snitch-product-images.s3.amazonaws.com/uploads/images/product/14/images/snitch%20.jpeg"
+          }
         ],
-        "max_retail_price":{
-          "amount":"80.00",
-          "currency":"USD"
+        "max_retail_price": {
+          "amount": "1200.00",
+          "currency": "USD"
         },
-        "meta_description":null,
-        "meta_keywords":null,
-        "meta_title":null,
-        "name":"HOGWARTS SCHOOL TRUNK",
-        "promotionable":null,
-        "rating_summary":{
-          "average_rating":"0",
-          "rating_summary":{
-
+        "meta_description": null,
+        "meta_keywords": null,
+        "meta_title": null,
+        "name": "Golden snitch",
+        "promotionable": null,
+        "rating_summary": {
+          "average_rating": "5.0",
+          "rating_list": {
+            "5": {
+              "position": 5,
+              "value": "100.0"
+            }
           },
-          "review_count":0
+          "review_count": 1
         },
-        "selling_price":{
-          "amount":"59.00",
-          "currency":"USD"
+        "selling_price": {
+          "amount": "1000.00",
+          "currency": "USD"
         },
-        "slug":"hogwarts-school-trunk"
+        "slug": "golden-snitch"
       },
-      "id":"11",
-      "links":{
-        "self":"/products/hogwarts-school-trunk"
+      "id": "14",
+      "links": {
+        "self": "/products/golden-snitch"
       },
-      "relationships":{
-        "options":{
-
+      "relationships": {
+        "options": {},
+        "reviews": {},
+        "theme": {
+          "data": null
         },
-        "reviews":{
-
-        },
-        "theme":{
-          "data":null
-        },
-        "variants":{
-
-        }
+        "variants": {}
       },
-      "type":"product"
+      "type": "product"
     }
   ],
-  "jsonapi":{
-    "version":"1.0"
+  "jsonapi": {
+    "version": "1.0"
   }
 }
 ```
