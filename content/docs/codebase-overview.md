@@ -34,7 +34,7 @@ Domain serve the purpose of interactions(Public API's) with the other domains. D
 
 > Note:
 >
-> **Domain** is entry into any module. **Model** is used for accessing data from the DB. **Schema** defines the tables and it's contraints. It's like a layered architecture with models facing the outside world, schema making the core and models sandwiched in between domain and schema.
+> **Domain** is entry into any module. **Model** is used for accessing data from the DB. **Schema** defines the tables and it's contraints. It's a layered architecture with **Domain** facing the outside world acting as an API, **Schema** making the core of the system and the lowest level and **Models** sandwiched in between *domain* and *schema* acting as a bridge between the outside world and datastore.
 
 ## Tests
 
