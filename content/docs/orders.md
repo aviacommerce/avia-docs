@@ -4,7 +4,7 @@ title: Orders
 layout: docs
 category: Reference
 permalink: docs/orders.html
-
+next: users.html
 ---
 
 ## Overview
@@ -134,4 +134,4 @@ from which the package can be shipped, then the `stock location` from which the
 [6]: https://github.com/aviacommerce/avia/blob/develop/apps/snitch_core/lib/core/domain/order/default_machine.ex
 [7]: /docs/checkouts-api.html
 [8]: /docs/order-states.html
-[9]:
+[9]: /docs/shipments.html

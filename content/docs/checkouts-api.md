@@ -27,7 +27,6 @@ current order for a user. See [Current Order](/docs/orders-api.html#current-orde
 In case the user is not signed in, an order is created when a call is made to add
 the first line item. See [Add Line Item](/docs/line-items-api.html).
 
-
 ### Add Line Item
 To add line items to the order created. See [Add Line Item](/docs/line-items-api.html).
 
