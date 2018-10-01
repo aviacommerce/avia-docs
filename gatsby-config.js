@@ -49,6 +49,14 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-remark-graph',
+            options: {
+              // this is the language in your code-block that triggers mermaid parsing
+              language: 'mermaid', // default
+              theme: 'default' // could also be dark, forest, or neutral
+            }
+          },
           'gatsby-remark-responsive-iframe',
           {
             resolve: 'gatsby-remark-images',
@@ -86,7 +94,7 @@ module.exports = {
             },
           },
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
+          'gatsby-remark-smartypants'
         ],
       },
     },

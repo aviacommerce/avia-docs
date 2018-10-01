@@ -11,13 +11,13 @@ permalink: docs/checkouts-api.html
 This section deals with the order state transitions during checkout.
 To advance an `order` state request needs to be made to the respective
 API.
-The sections below explian the complete flow of the order from `cart` state
+The sections below explain the complete flow of the order from `cart` state
 to `confirmed` state.
 To sum up one directional flow in short, the order goes through the following states:
 
 `cart` --> `address` --> `delivery` --> `payment` --> `confirmed`
 
-To know more about order state transitions See __Order States__.
+To know more about order state transitions See [_Order State Machine_][1].
 
 ### Blank Order
 
@@ -31,4 +31,13 @@ the first line item. See [Add Line Item](/docs/line-items-api.html).
 ### Add Line Item
 To add line items to the order created. See [Add Line Item](/docs/line-items-api.html).
 
-### 
+### Add Address
+
+### Save Shipping Preferences
+
+### Save Payment Method
+
+### Make Payment
+
+
+[1]: docs/order-states.html
