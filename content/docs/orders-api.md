@@ -7,7 +7,7 @@ permalink: docs/orders-api.html
 
 ---
 
-### Current Order
+## Current Order
 
 Returns an `order` for the signed in `user`. The order can be in any of the following
 states:
@@ -20,7 +20,7 @@ The `state` in which the `order` is returned, depends on the stage on which the 
 left the storefront. In case, the user visits the store front for the first time,
 an order is created in the `cart` state and returned.
 
-#### Request
+### Example Request
 ```
 POST /api/v1/orders/current
 Content-Type : application/vnd.api+json
@@ -28,10 +28,10 @@ Accept       : application/vnd.api+json
 Authorization: "Bearer <token>"
 ```
 
-#### Parameters
+### Parameters
 `{}`
 
-#### Response
+### Example Response
 <details><summary>Detail</summary>
 <p>
 
@@ -78,23 +78,23 @@ Authorization: "Bearer <token>"
 
 > TODO: Add links when order is in `payment` and `delivery` etc.
 
-### Show(cart)
+## Show(cart)
 The details of a single `order` can be viewed by making a request using the
 `order number`.
 
-#### Request
+### Example Request
 ```
 POST api/v1/orders/:order_number
 Content-Type : application/vnd.api+json
 Accept       : application/vnd.api+json
 ```
 
-#### Parameters
+### Parameters
 | Parameter    | Description                     | Parameter type | Data Type |
 |--------------|---------------------------------|----------------|-----------|
 | *`order_number` | Order number field of an order. | path           | string    |
 
-#### Response
+### Example Response
 
 <details><summary>Detail</summary>
 <p>
