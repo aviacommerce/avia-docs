@@ -11,7 +11,7 @@ next: orders-api.html
 
 Lists all the `active` products for all the requests. User does not need to be authenticated to make this call. Product table has a `is_active` flag which determines if the product goes live on the store-front.
 
-### Request
+### Example Request
 
 ```
 GET /api/v1/products
@@ -19,7 +19,7 @@ Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 ```
 
-#### Parameters
+### Parameters
 
 | Parameter      | Description                                                | Parameter Type | Data Type |
 |:--------------:|:----------------------------------------------------------:|:--------------:|:---------:|
@@ -32,7 +32,7 @@ Products are paginated and can be iterated through by passing along a page param
 GET /api/v1/products?page[limit]=2&page[offset]=1"
 ```
 
-### Response
+###  Example Response
 
 Returns the products and its attributes. This does not include the variants by default.
 
@@ -169,7 +169,7 @@ Returns the products and its attributes. This does not include the variants by d
 
 To view the details of a product make this request.
 
-### Request
+### Example Request
 
 ```
 GET /api/v1/products/{slug}
@@ -179,14 +179,14 @@ Accept: application/vnd.api+json
 
 where `slug` is a unique product identifier. Read more about slugs [here](https://confluence.atlassian.com/bitbucket/what-is-a-slug-224395839.html).
 
-#### Parameters
+### Parameters
 
 | Parameter      | Description                                                | Parameter Type | Data Type |
 |:--------------:|:----------------------------------------------------------:|:--------------:|:---------:|
 | `slug`         | a unique product identifier                                | query          | string    |
 
 
-### Response
+### Example Response
 
 Returns the product struct with variants.
 
@@ -555,7 +555,7 @@ Returns the product struct with variants.
 
 To search a product by it's property or any other attribute use this API.
 
-### Request
+### Example Request
 
 ```
 GET /api/v1/products?filter[name]=broom
@@ -563,7 +563,7 @@ Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 ```
 
-#### Parameters
+### Parameters
 
 | Parameter      | Description                            | Parameter Type | Data Type |
 |:--------------:|:--------------------------------------:|:--------------:|:---------:|
@@ -578,7 +578,7 @@ The search results are paginated.
 GET /api/v1/products?filter[name]=broom&page[limit]=2&page[offset]=1
 ```
 
-### Response
+### Example Response
 
 <details><summary>Example response (STATUS: 200 OK)</summary>
 
@@ -710,7 +710,7 @@ GET /api/v1/products?filter[name]=broom&page[limit]=2&page[offset]=1
 
 To sort searched products by it's property or any other attribute use this API.
 
-### Request
+### Example Request
 
 ```
 GET /api/v1/products?filter[name]=broom&sort=date
@@ -718,7 +718,7 @@ Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 ```
 
-#### Parameters
+### Parameters
 
 | Parameter      | Description                            | Parameter Type | Data Type |
 |:--------------:|:--------------------------------------:|:--------------:|:---------:|
@@ -733,7 +733,7 @@ The sort results are paginated.
 GET /api/v1/products?filter[name]=broom&sort=date&page[limit]=2&page[offset]=1
 ```
 
-### Response
+### Example Response
 
 <details><summary>Example response (STATUS: 200 OK)</summary>
 

@@ -18,7 +18,7 @@ Accept: application/vnd.api+json
 Authorization: Bearer token
 ```
 
-#### Request
+### Example Request
 
 ```json
 {
@@ -44,14 +44,14 @@ Authorization: Bearer token
   }
 }
 ```
-
+### Parameters
 | Parameter                          | Description                                          | Parameter Type | Data Type |
 |------------------------------------|------------------------------------------------------|----------------|-----------|
 | `relationships[order][data][id]`   | order id where the line item should be added         | body           | number    |
 | `relationships[product][data][id]` | product id which needs to be added to cart           | body           | number    |
 | `data[attributes][quantity]`       | quantity of product that should be added to cart     | body           | number    |
 
-#### Response
+### Example Response
 
 <details>
 <summary>Example response (STATUS: 200 OK)</summary>
@@ -188,7 +188,7 @@ Accept: application/vnd.api+json
 Authorization: Bearer token
 ```
 
-#### Request
+### Example Request
 
 ```json
 {
@@ -198,12 +198,13 @@ Authorization: Bearer token
   }
 }
 ```
+### Parameters
 
 | Parameter                        | Description                                      | Parameter Type | Data Type |
 |----------------------------------|--------------------------------------------------|----------------|-----------|
 | data[id]                         | line item id which needs to be deleted           | body           | number    |
 
-#### Response
+### Example Response
 
 Example response (STATUS: 204 OK)
 

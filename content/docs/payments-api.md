@@ -9,7 +9,7 @@ permalink: docs/payments-api.html
 
 > These api's are for signed in user only
 
-### List Payment Methods
+## List Payment Methods
 
 ---
 
@@ -22,7 +22,7 @@ Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 Authorization: Bearer token
 ```
-#### Example Response
+### Example Response
 <details><summary> Example response (STATUS: 200 OK)</summary>
 
 ```json
@@ -65,7 +65,7 @@ Authorization: Bearer token
 
 </details>
 
-### Add Payment Method to Order
+## Add Payment Method to Order
 
 ---
 > TODO: Please add more information as needed.
@@ -78,16 +78,16 @@ Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 Authorization: Bearer token
 ```
-#### Params
+### Parameters
 
-| Parameter     | Data Type     | Description    |
-| ------------- | ------------- | -------------  |
-| id            | integer       | Order Id       |
-| amount        | text          | Order total amount |
-| `payment_method_id` | integer | Selected Payment method id|
+| Parameter     | Description   | Parameter Type| Data Type     |
+| ------------- | ------------- | ------------- | ------------- |
+| id            | Order Id      |    body       | integer       |
+| amount        | Order total amount | body     | text          |
+| `payment_method_id` | Selected Payment method id  | body | integer |
 
 
-#### Example Request
+### Example Request
 
 ```json
 {  
@@ -102,7 +102,7 @@ Authorization: Bearer token
 }
 ```
 
-#### Example Response
+### Example Response
 <details><summary> Example response (STATUS: 200 OK)</summary>
 
 ```json
@@ -217,7 +217,7 @@ Authorization: Bearer token
 ```
 </details>
 
-### Payment Request Using Payubiz
+## Payment Request Using Payubiz
 
 ---
 > TODO: Please add more information as needed.
@@ -231,23 +231,21 @@ Accept: application/vnd.api+json
 Authorization: Bearer token
 ```
 
-#### Params
+### Parameters
 
-| Parameter         | Data Type     | Description |
-| -------------     | ------------- | ------------- |
-| order_id    | integer    | Order Id               |
-| payment_id  | integer    | payment Id             |
-| `order_number`| text       | Order number         |
-| `payment_method_id`| integer| Selected Payment method id|
-| amount      | text       | Order total amount     |
-| `product_info `| text    | Product name           |
-| `first_name `| text      | User's first name      |
-| `email `     | text      | User's email           |
-
-
+| Parameter      | Description   | Parameter Type| Data Type     |
+| -------------  | ------------- | ------------- | ------------- |
+| order_id       |  Order Id     |  body         | integer       |
+| payment_id     |  payment Id   |  body         | integer       |
+| `order_number` |  Order number |  body         | text          |
+| `payment_method_id` | Selected Payment method id|  body        | integer |
+| amount         | Order total amount|    body   |    text       |
+| `product_info `| Product name  |     body      |     text      |
+| `first_name `  | User's first name | body      |   text        |
+| `email `       | User's email  |   body        |   text        |
 
 
-#### Example Request
+### Example Request
 
 ```json
 {
@@ -266,7 +264,7 @@ Authorization: Bearer token
 }
 ```
 
-#### Example Response
+### Example Response
 <details><summary> Example response (STATUS: 200 OK)</summary>
 
 ```json
@@ -277,7 +275,7 @@ Authorization: Bearer token
 </details>
 
 
-### COD(cash on delivery) Payment mode.
+## COD(cash on delivery) Payment mode.
 
 ---
 > TODO: Please add more information as needed.
@@ -291,14 +289,14 @@ Accept: application/vnd.api+json
 Authorization: Bearer token
 ```
 
-#### Params
+### Parameters
 
-| Parameter     | Data Type     | Description   |
-| ------------- | ------------- | ------------- |
-| order_id      | integer       | Order Id      |
+| Parameter      | Description   | Parameter Type| Data Type     |
+| ------------- | ------------- | ------------- | -------------  |
+| order_id      | Order Id      |    body       | integer        |
 
 
-#### Example Request
+### Example Request
 
 ```json
 {
@@ -312,7 +310,7 @@ Authorization: Bearer token
 ```
 > TODO: COD order state needs to be updated to `confirm`.
 
-#### Example Response
+### Example Response
 <details><summary> Example response (STATUS: 200 OK)</summary>
 
 ```json

@@ -17,22 +17,25 @@ Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 ```
 
-#### Request
+### Example Request
 
 ```json
 {
-  "data":{
-    "type":"user",
-    "attributes":{
-      "first_name":"Harry",
-      "last_name":"Potter",
-      "email":"harry@snitch.com",
-      "password":"harry123",
-      "password_confirmation":"harry123"
-    }
-  }
+ "data": {
+  "type": "user",
+  "attributes": {
+    "first_name": "Harry",
+    "last_name": "potter",
+    "email": "harry_potter@aviabird.com",
+    "password": "somepassword",
+    "password_confirmation": "somepassword"
+  } 
+ } 
 }
 ```
+
+### Parameters
+
 
 | Parameter                                 | Description                              | Parameter Type | Data Type |
 |-------------------------------------------|------------------------------------------|----------------|-----------|
@@ -42,7 +45,7 @@ Accept: application/vnd.api+json
 | `data[attributes][password]`              | Password should have minimum length of 8 | body           | string    |
 | `data[attributes][password_confirmation]` | Password confirmation                    | body           | string    |
 
-#### Response
+### Example Response
 
 <details>
 <summary>Example response (STATUS: 200 OK)</summary>
@@ -52,7 +55,7 @@ Accept: application/vnd.api+json
 {
   "data":{
     "attributes":{
-      "email":"harry@snitch.com",
+      "email":"harry_potter@aviabird.com",
       "name":"HarryPotter"
     },
     "id":"4",
@@ -80,21 +83,21 @@ Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 ```
 
-#### Request
+### Example Request
 
 ```json
 {
-  "email": "harry@snitch.com",
-   "password": "harry123"
+  "email": "harry_potter@aviabird.com",
+   "password": "somepassword"
 }
 ```
-
+### Parameters
 | Parameter                                 | Description                              | Parameter Type | Data Type |
 |-------------------------------------------|------------------------------------------|----------------|-----------|
 | `email`                                   | User email                               | body           | string    |
 | `password`                                | User password                            | body           | string    |
 
-#### Response
+### Example Response
 
 <details>
 <summary>Example response (STATUS: 200 OK)</summary>
@@ -104,11 +107,11 @@ Accept: application/vnd.api+json
 {
   "data":{
     "attributes":{
-      "email":"harry@snitch.com",
+      "email":"harry_potter@aviabird.com",
       "first_name":"Harry",
       "id":4,
       "last_name":"Potter",
-      "token":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJzbml0Y2hfYXBpIiwiZXhwIjoxNTM4MTEzNzE2LCJpYXQiOjE1Mzc4NTQ1MTYsImlzcyI6InNuaXRjaF9hcGkiLCJqdGkiOiI1OWFmZjViYS1jYWNhLTQxMmEtYmIwMy0yMDJlZWQwMjNmMTAiLCJuYmYiOjE1Mzc4NTQ1MTUsInN1YiI6IjQiLCJ0eXAiOiJhY2Nlc3MifQ.aWEUeDjp3h7j5W1PnzVTW_-VwBLysZFeqOyr_xKM3o7vf85S62wjUp4KtnAxUReRhIIL3-v6tT3cCh2_mz4biQ"
+      "token":"some_string_token"
     },
     "id":4,
     "type":"user"
@@ -129,7 +132,7 @@ Accept:  application/vnd.api+json
 Authorization: Bearer token
 ```
 
-#### Response
+### Example Response
 
 Example response (STATUS: 204 OK)
 

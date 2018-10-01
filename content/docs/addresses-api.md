@@ -8,7 +8,7 @@ permalink: docs/addresses-api.html
 
 > These api's are for signed in user only
 
-### List Address
+## List Address
 
 ---
 
@@ -20,7 +20,7 @@ Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 Authorization: Bearer token
 ```
-
+### Example Response
 <details><summary> Example response (STATUS: 200 OK)</summary>
 
 ```json
@@ -89,7 +89,7 @@ Authorization: Bearer token
 
 </details>
 
-### Add/save user address
+## Add/save user address
 
 ---
 
@@ -102,23 +102,23 @@ Accept: application/vnd.api+json
 Authorization: Bearer token
 ```
 
-#### Params
+### Parameters
 
-| param             | type          | description               |
-| -------------     | ------------- | -------------             |
-| address_line_1    | text          | User address              |
-| address_line_2    | text          | User address              |
-| first_name        | text          | First name of user        |
-| last_name         | text          | Last name of user         |
-| zip_code          | text          | zipcode of user address   |
-| state_id          | integer       | state for this address    |
-| country_id        | integer       | country for this address  |
-| city              | text          | city for this address     |
-| phone             | text          | phone number for user     |
-| alternate_phone   | text          | alternate phone number    |
-| relationships[user]:[data]:[id]  | integer  | user id of user |
+| Parameter      | Description   | Parameter Type| Data Type     |
+| -------------  | ------------- | ------------- | ------------- |
+| address_line_1    |User address     | body          |   text   |
+| address_line_2    |User address     | body          |   text   |
+| first_name        | First name of user | body | text           |       
+| last_name         | Last name of user| body | text             |
+| zip_code          | zipcode of user address | body | text      |  
+| state_id          | state for this address | body | integer    |    
+| country_id        | country for this address | body | integer  |   
+| city              | city for this address  | body | text       |   
+| phone             | phone number for user | body | text        |      
+| alternate_phone   | alternate phone number | body | text       |     
+| relationships[user]:[data]:[id]  | user id of user | body | integer |
 
-#### Example Request
+### Example Request
 
 ```json
 {
@@ -186,7 +186,7 @@ Authorization: Bearer token
 
 </details>
 
-### Select Address
+## Select Address
 
 ---
 
@@ -199,33 +199,33 @@ Accept: application/vnd.api+json
 Authorization: Bearer token
 ```
 
-#### Params
+### Parameters
 
-| param  | type | description |
-| ------------- | ------------- | ------------- |
-| billing_address[address_line_1]  | text  | User address  |
-| billing_address[address_line_2]  | text  | User address  |
-| billing_address[first_name]  | text  | First name of user  |
-| billing_address[last_name]  | text  | Last name of user  |
-| billing_address[zip_code]  | text  | zipcode of user address  |
-| billing_address[state_id]  | integer  | state for this address  |
-| billing_address[country_id]  | integer  | country for this address  |
-| billing_address[city]  | text  | city for this address  |
-| billing_address[phone]  | text  | phone number for user  |
-| billing_address[alternate_phone]  | text  | alternate phone number  |
-| shipping_address[address_line_1]  | text  | User address  |
-| shipping_address[address_line_2]  | text  | User address  |
-| shipping_address[first_name]  | text  | First name of user  |
-| shipping_address[last_name]  | text  | Last name of user  |
-| shipping_address[zip_code]  | text  | zipcode of user address  |
-| shipping_address[state_id]  | integer  | state for this address  |
-| shipping_address[country_id]  | integer  | country for this address  |
-| shipping_address[city]  | text  | city for this address  |
-| shipping_address[phone]  | text  | phone number for user  |
-| shipping_address[alternate_phone]  | text  | alternate phone number  |
-| relationships[user]:[data]:[id]  | integer  | user id of user  |
+| Parameter     | Description   | Parameter Type| Data Type     |
+| ------------- | ------------- | ------------- | ------------- |
+| billing_address[address_line_1]  |User address| body| text  |
+| billing_address[address_line_2]  |User address | body | text  |
+| billing_address[first_name]  | First name of user| body |  text  |
+| billing_address[last_name]  | Last name of user | body | text  |  
+| billing_address[zip_code]  | zipcode of user address | body | text  | 
+| billing_address[state_id]  | state for this address | body | integer  | 
+| billing_address[country_id]  | country for this address | body | integer  |
+| billing_address[city]  | city for this address | body | text  | 
+| billing_address[phone]  | phone number for user | body | text  |   
+| billing_address[alternate_phone]  | alternate phone number  | body | text  | 
+| shipping_address[address_line_1]  | User address | body | text  |
+| shipping_address[address_line_2]  | User address | body | text  | 
+| shipping_address[first_name]  | First name of user  | body | text | 
+| shipping_address[last_name]  | Last name of user | body | text  |  
+| shipping_address[zip_code]  | zipcode of user address  | body  | text  |
+| shipping_address[state_id]  | state for this address| body | integer  | 
+| shipping_address[country_id]  | country for this address | body | integer  | 
+| shipping_address[city]  | city for this address| body | text  |
+| shipping_address[phone]  | phone number for user  | body | text  |
+| shipping_address[alternate_phone]  | alternate phone number | body | text  |
+| relationships[user]:[data]:[id]  | user id of user |  body  | integer| 
 
-#### Example Request
+### Example Request
 
 ```json
 {
@@ -269,7 +269,7 @@ Authorization: Bearer token
 }
 ```
 
-#### Response
+### Examples Response
 <details><summary> Example response (STATUS: 200 OK)</summary>
 
 ```json
