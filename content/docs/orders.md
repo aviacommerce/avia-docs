@@ -50,7 +50,7 @@ Modules Responsible for handling business logic for `order` model.
 - [`Snitch.Domain.Order.Transitions`][5]: Exposes Transition function for order state
   transitions.
 - [`Snitch.Domain.Order.DefaultMachine`][6]: The _default_ order state machine to handle state
-   transitions. The _default_ order state machine can be replaced with any custom state machine to 
+   transitions. The _default_ order state machine can be replaced with any custom state machine to
    handle transitions.
 
 ## LineItems

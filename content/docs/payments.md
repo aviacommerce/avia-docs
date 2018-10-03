@@ -11,17 +11,18 @@ permalink: docs/payments.html
 
 Payments in AviaCommerce has been designed in a manner to allow multiple payment methods
 to be available to choose from during checkout. The logic for payment processing is
-completely detached from order flow in order to maintain flexibility in implementation
-of the processing logic.  
+completely detached from order flow to maintain flexibility in implementation
+of the payment processing logic.
 
-Though there is flexibility in creating different payment methods but, all these payment
-methods are essentially of one of the four main types which are gateway based(used 
-to process card payments), cash on delivery, store credits based or hosted payments(again
-based on gateways).
+All the payment methods are essentially of one of the four main types which are:
+- card payments (gateway based)
+- cash on delivery
+- store credits
+- hosted payments(gateway based)
 
-In order to track `payments` for `orders` a [supertype subtype modelling][1] is used.
+To track `payments` for `orders` a [supertype subtype modelling][1] is used.
 The `payment` model stores the details which are usually common for all payment types
-whereas the type specific information is stored in the corresponding `subtype`.
+whereas the type specific information is stored in the corresponding `subtype`.  
 An `order` can be paid through multiple payment methods. This has been done keeping
 in mind the functionality for store credits, which gives customers to utilize store
 credits to make payment.
@@ -32,11 +33,9 @@ The attributes of the payment table:
 - `payment_type`: A string identifier to identify the type of payment, `cod`, 
    `hosted_payment`, `card` or `store credits`.
 - `amount`: The amount to be paid in this payment.
-- `state`: An identifier to see if the payment is `pending`, `successful` or
-   it failed during the attempt.
+- `state`: It tell about the state the payment is in. See [`Payment States`][2] section.
 
-
-Payment states
+## Payment states
 
 Different library to handle implementation details
 
@@ -52,3 +51,4 @@ Card
 
 
 [1]: https://stackoverflow.com/questions/4763141/data-modeling-supertype-subtype
+[2]: /docs/payments.html#PaymentStates
