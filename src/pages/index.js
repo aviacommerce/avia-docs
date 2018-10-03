@@ -16,7 +16,7 @@ import createOgUrl from 'utils/createOgUrl';
 import loadScript from 'utils/loadScript';
 import {babelURL} from 'site-constants';
 import ReactDOM from 'react-dom';
-import logoWhiteSvg from 'icons/logo-white.svg';
+// import logoWhiteSvg from 'icons/logo-white.svg';
 
 class Home extends Component {
   constructor(props, context) {
