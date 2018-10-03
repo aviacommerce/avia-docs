@@ -14,13 +14,13 @@ types of `users` depending on the roles assigned to them. The two main `roles` a
 For more details on `roles` see the [`Roles`][4] section.
 
 The important attributes of the `user` model are:
-- `first_name`: first name of the user.
-- `last_name`: last name of the user.
+- `first_name`: the first name of the user.
+- `last_name`: the last name of the user.
 - `email`: email with which the user has signed up.
 - `password_hash`: password hash for the user password.
 
-  User Relationships:
-  - ** _belongs to_ ** `role`: Associates a role with the user.
+User Relationships:
+  - **_belongs to_** `role`: Associates a role with the user.
 
 To see other attributes of the `user` model see, [`User`][1].
 
@@ -38,7 +38,7 @@ The role model has the following attributes:
 - `description`: description of the role.
 
 Relationships:
-- *_many to many_* `permissions` through `role_permissions`: a set of permissions
+- **_many to many_** `permissions` through `role_permissions`: a set of permissions
 associated with the role. The relationship is a **_many to many_** since the same
 permission can be associated with many roles. The middle table used for the association
 is `role_permission`.
@@ -64,7 +64,7 @@ Modules for handling business logic related to `permission` model:
 - [`Snitch.Data.Model.Permission`][10]: CRUD functions for permission model.
 
 Relationships:
-- **__has many_** role_permissions: permissions have **__many to many_** relationship
+- **_has many_** `role_permissions`: `permission` model has **_many to many_** relationship
 with the `role` model through the middle table `role_permissions`.
 
 The permissions and roles can be easily configured from the admin panel. However, the

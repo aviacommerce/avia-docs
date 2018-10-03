@@ -43,7 +43,7 @@ It has following relationships:
  - **_has many_** `line_items`: An order can have one or more `lineitems` depending on the
   the purchases made by the user. See line item section for more info.
 
-Modules Responsible for handling business logic for `order` model.
+Modules responsible for handling business logic for `order` model.
 - [`Snitch.Data.Schema.Order`][2]: Defines the order schema.
 - [`Snitch.Data.Model.Order`][3]: Handles the CRUD functions for order model.
 - [`Snitch.Domain.Order`][4]: Exposes Calculation and other important functions.
