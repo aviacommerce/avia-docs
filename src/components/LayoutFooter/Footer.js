@@ -14,7 +14,7 @@ import React from 'react';
 import {colors, media} from 'theme';
 import {sectionListCommunity, sectionListDocs} from 'utils/sectionList';
 
-import ossLogoPng from 'images/oss_logo.png';
+// import ossLogoPng from 'images/oss_logo.png';
 
 const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
   <footer
