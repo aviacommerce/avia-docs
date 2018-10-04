@@ -53,8 +53,9 @@ We need to clone the `avia` repository on our local.
     ```
     > source local.env
     ```
-  #### Setting up S3 for image upload \\TODO
-  #### Setting up local for image upload \\TODO
+  #### Setting up S3 for image upload
+  
+  #### Setting up local for image upload
 
 ### Configuring Postgres
   To setup the database we have to modify `/apps/snitch_core/config/dev.exs`.  
