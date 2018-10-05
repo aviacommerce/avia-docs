@@ -15,7 +15,7 @@ Services that integrate with e-commerce systems do so with the help of plugins. 
 
 It's important to understand these 2 kinds of services to fully understand our idea of cost reduction.
 
-**Standalone Services:** Sellers use these services totally independently which means sellers interact with these systems day in day out. Hence, it is not possible for aviacommerce to use one account for all sellers. Reason for this is configurations for these accounts are seller specific. eg. Shipstation, ShipperHQ, Custora, Blueshift, DOMO.
+**Standalone Services:** Sellers use these services independently which means sellers interact with these systems day in day out. Hence, it is not possible for aviacommerce to use one account for all sellers. Reason for this is configurations for these accounts are seller specific. eg. Shipstation, ShipperHQ, Custora, Blueshift, DOMO.
 
 **Generic Services:** These services are generic purpose services such as _delivery network[1]_, email, sms etc to name a few. It's possible for aviacommerce to use one account for all sellers. Aviacommerce will have a contract agreement with these services and would be able to bargain on high volumes for better rates. These better rates are going to help in cost reduction and provide value to the seller.
 
@@ -28,6 +28,7 @@ So the plan is simple:
 2. Provide solutions for the costly third party services, reduce cost by 5-6X.
 3. Add more services, reduce the cost by a factor of 10X with volume.
 
+That's about it for now. Sweet and Simple!
 
 ------------------------
 
