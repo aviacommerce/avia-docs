@@ -6,10 +6,10 @@
       title: Frontend Installation
     - id: backend-install
       title: Backend Installation
-    - id: frontend-deployment
-      title: Frontend Deployment
-    - id: backend-deployment
-      title: Backend Deployment
+    # - id: frontend-deployment
+    #   title: Frontend Deployment
+    # - id: backend-deployment
+    #   title: Backend Deployment
 - title: Main Concepts
   isOrdered: true
   items:
