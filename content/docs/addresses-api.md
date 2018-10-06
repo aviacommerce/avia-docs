@@ -368,7 +368,7 @@ Authorization: Bearer token
 
 </details>
 
-### List Coutries
+## List Coutries
 
 ---
 
@@ -379,7 +379,7 @@ GET /api/v1/countries/
 Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 ```
-#### Response
+### Example Response
 
 <details><summary> Example response (STATUS: 200 OK)</summary>
 
@@ -424,7 +424,7 @@ Accept: application/vnd.api+json
 </details>
 
 
-### List States
+## List States
 
 ---
 
@@ -435,7 +435,7 @@ GET /api/v1/countries/:country_id/states
 Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 ```
-#### Response
+###  Example Response
 
 <details><summary> Example response (STATUS: 200 OK)</summary>
 

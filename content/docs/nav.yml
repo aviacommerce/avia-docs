@@ -55,6 +55,10 @@
       title: Payments API
     - id: addresses-api
       title: Addresses API
+    - id: shipping-api
+      title: Shipping API
+    - id: reviews-and-ratings-api
+      title: Reviews & Ratings API
 - title: Contributing
   items:
   - id: how-to-contribute
