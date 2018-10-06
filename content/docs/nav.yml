@@ -23,12 +23,12 @@
       title: Shipments
     - id: configurations
       title: Configurations
-    - id: promotions
-      title: Promotions
-    - id: reports
-      title: Reports
-    - id: extentions
-      title: Extentions
+    # - id: promotions
+    #   title: Promotions
+    # - id: reports
+    #   title: Reports
+    # - id: extentions
+    #   title: Extentions
 - title: Advanced Concepts
   items:
     - id: checkout-cycle

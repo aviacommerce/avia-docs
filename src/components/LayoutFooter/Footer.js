@@ -92,6 +92,18 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               rel="noopener">
               Gitter Chat
             </ExternalFooterLink>
+            <ExternalFooterLink
+              href="https://facebook.com/aviacommerce"
+              target="_blank"
+              rel="noopener">
+              Facebook
+            </ExternalFooterLink>
+            <ExternalFooterLink
+              href="https://twitter.com/aviacommerce"
+              target="_blank"
+              rel="noopener">
+              Twitter
+            </ExternalFooterLink>
           </FooterNav>
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
             <MetaTitle onDark={true}>Community</MetaTitle>
