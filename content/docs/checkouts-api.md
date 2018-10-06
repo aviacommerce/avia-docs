@@ -31,12 +31,14 @@ the first line item. See [Add Line Item](/docs/line-items-api.html).
 To add line items to the order created. See [Add Line Item](/docs/line-items-api.html).
 
 ### Add Address
+To add a address to the order created. See [Add Address](/docs/addresses-api.html).
 
-### Save Shipping Preferences
+### Add Shipping Preferences
+To add a Shipping Preferences to the order created. See [Add Shipping](/docs/shipping-api.html).
 
-### Save Payment Method
+### Add Payment
+To add a payment to the order created. See [Add Address](/docs/payments-api.html).
 
-### Make Payment
 
 
 [1]: docs/order-states.html
