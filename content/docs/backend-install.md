@@ -34,7 +34,8 @@ Step-by-step guide to setup Avia Commerce locally for development and contributi
     issues we would suggest **v 9.11.0** or higher.
 
 ### Extras
-  - [wkhtmltopdf][9] is a command line tool to render HTML into PDF. Used in generating pdf invoices. Download [here][10].
+  - [wkhtmltopdf][9] is a command line tool to render HTML into PDF. Used in generating 
+  pdf invoices. Download [here][10].
 
 ## Repo
 You can find all the repositories related to Avia Commerce [here][6]. 
@@ -56,9 +57,12 @@ We need to clone the `avia` repository on our local.
     ```
     > source local.env
     ```
-  #### Setting up S3 for image upload
   
-  #### Setting up local for image upload
+  #### Image Upload Setup
+  The default configuration to store uploaded images on development environment is
+  local storage.
+
+  #### Setting up for image upload on S3 \\TODO
 
 ### Configuring Postgres
   To setup the database we have to modify `/apps/snitch_core/config/dev.exs`.  
@@ -113,7 +117,7 @@ below, otherwise follow [Configuring Postgres][7].
     > npm install
   ```
 
-  ### Runnning the server
+  ### Running the server
 
   From the project root
   ```
