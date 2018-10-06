@@ -128,6 +128,11 @@ const Header = ({location}: {location: Location}) => (
             title="Blog"
             to="/blog/"
           />
+          <HeaderLink
+            isActive={location.pathname.includes('/demo/')}
+            title="Demo"
+            to="/demo/demo.html"
+          />
         </nav>
 
         <DocSearch />
