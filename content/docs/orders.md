@@ -12,7 +12,7 @@ The order model is a key entity which tracks purchases made by customers on Avia
 and possible returns. It gives the admin a way to manage received orders.
 
 The order model has following attributes:
-- `number`: It uniquely identifies the order. At present it
+- `number`: It uniquely identifies the order. At present, it
    is being generated using [nanoid][1]. The order number is available to both the user
    and the admin and can be used to address any grievances. To get the order details
    `Snitch.Model.Order.get/1` can be used with the `order_number` as params.
@@ -24,26 +24,26 @@ The order model has following attributes:
     to be performed or add some note to the order.
 - `inserted_at`: It identifies the timestamp at which order was created for the first
    time.
-- `updated_at`: It the gives timestamp when the order has been updated with any new
+- `updated_at`: It gives the timestamp when the order was updated with any new
    information.
-- `billing_address`: It relates to information regarding the address which
+- `billing_address`: It relates to the information regarding the address which
    is connected with the specific form of payment for this order. See the [Address][11]
    section to know more.
 - `shipping_address`: This field depicts the address to which the order should be
   shipped. Scroll to [Address][11] section to know more.
 
-It has following relationships:
+It has the following relationships:
  - **_has many_** `payments`: An order can be paid through one or more payment methods.
   The order model has been designed in such a manner so as to support partial
   payments through multiple methods. This is usually required when the stores have
-  wallet which can be used for making payments and any balance amount after using
+  a wallet which can be used for making payments and any balance amount after using
   the store credits can be made through other payment methods.
  - **_has many_** `packages`: An order can have multiple packages created under a set of rules.
   To know more about the rules and `package` entity, see the [Packages][12] section.
- - **_has many_** `line_items`: An order can have one or more `lineitems` depending on the
+ - **_has many_** `line_items`: An order can have one or more `lineitems` depending on
   the purchases made by the user. See line item section for more info.
 
-Modules responsible for handling business logic for `order` model.
+Modules responsible for handling the business logic for `order` model.
 - [`Snitch.Data.Schema.Order`][2]: Defines the order schema.
 - [`Snitch.Data.Model.Order`][3]: Handles the CRUD functions for order model.
 - [`Snitch.Domain.Order`][4]: Exposes Calculation and other important functions.
@@ -55,13 +55,13 @@ Modules responsible for handling business logic for `order` model.
 
 ## LineItems
   A line item is used to keep track of items in the order. It is a kind of a link
-  between the `order` and `product`s with additional information in terms of purchase 
+  between the `order` and `products` with additional information in terms of purchase 
   made.  
   When a product is added to an order it's price is set as the unit price of the line item.
   This is done so that in case the price of the product changes in future, the line item
   would reflect the price used at the time of ordering.
 
-  Line Item  model attributes.
+  Line Item model attributes.
   - `quantity`: It's about the number of items of a particular type.
   - `unit_price`: The price of an item for that particular product.
 
@@ -70,7 +70,7 @@ Modules responsible for handling business logic for `order` model.
   - **_belongs to_** `order`: Foreign key association with the order.
 
   The line item model uses `quantity` field to maintain item consolidation so that,
-  a new item added for already existing line item should not be added as a new line
+  a new item added to an already existing line item should not be added as a new line
   item and only the quantity should be updated.
 
 ## Order States
@@ -102,7 +102,7 @@ Both these addresses have their own significance.
 ### Billing Address
 The billing address of an order is connected with the payment method used for
 making the purchase. It is used to identify an authorized use of the card. It is
-also used as an address to which the bill for the purchase would sent.  
+also used as an address to which the bill for the purchase would be sent.  
 The AVS(Address Verification System) employed by online merchants to identify
 any fraud related to the payment made is also based on the billing address used.
 
@@ -110,7 +110,7 @@ any fraud related to the payment made is also based on the billing address used.
 It refers to the address to which `packages` of the order would be sent to.
 The **shipping cost** for the order is calculated based on the `zone` the
 `shipping address` falls into.  
-Some merchants have multiple stock locations for their store. In that case a package
+Some merchants have multiple stock locations for their store. In that case, a package
 in an `order` can be fulfilled from multiple stock locations. The `stock location` from
 which the `package` would be shipped is selected based on the shipping address.
 
@@ -128,7 +128,7 @@ the admin action. The main states of a package are:
  To know more about `packages` see, [Shipments][9]
 
 ## Payments
-- Multiple payments for the order, at the moment not supported support coming very soon.
+- Multiple payments for the order, not supported at the moment. Support coming very soon.
 - Link to the payments detail.
 
 
