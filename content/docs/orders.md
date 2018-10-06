@@ -128,8 +128,18 @@ the admin action. The main states of a package are:
  To know more about `packages` see, [Shipments][9]
 
 ## Payments
-- Multiple payments for the order, not supported at the moment. Support coming very soon.
-- Link to the payments detail.
+An order can be paid for once it is in the `payment` state. In the `payment` state
+the total for the order has been calculated which includes:
+  - item total
+  - shipping cost
+  - shipping taxes
+  - item taxes
+In short all the costs associated with order are calculated and the order can be paid for.
+
+The business logic has been kept in a manner that an order can be paid via multiple payment
+methods. However, the functionality has not been added at this moment but, it will be added
+very soon.
+To know more about the payments functionality see [Payments][13].
 
 
 [1]: https://github.com/ai/nanoid
@@ -144,3 +154,4 @@ the admin action. The main states of a package are:
 [10]: /docs/orders.html#order-states
 [11]: /docs/orders.html#address
 [12]: /docs/orders.html#packages
+[13]: /docs/payments.html

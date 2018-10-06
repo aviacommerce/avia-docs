@@ -165,5 +165,3 @@ for an order, a new payment record is created. Payment retry is in pipeline.
 [8]: https://github.com/aviacommerce/avia/blob/develop/apps/snitch_core/lib/core/data/schema/payment/hosted_payment.ex
 [9]: https://github.com/aviacommerce/avia/blob/develop/apps/snitch_core/lib/core/data/model/payment/card_payment.ex
 [10]: https://github.com/aviacommerce/avia/blob/develop/apps/snitch_core/lib/core/data/schema/payment/card_payment.ex
-
-

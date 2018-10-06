@@ -32,6 +32,7 @@ const createLinkBlog = ({
   );
 };
 
+
 const createLinkCommunity = ({
   isActive,
   item,
@@ -68,6 +69,20 @@ const createLinkDocs = ({
     <Link
       css={[linkCss, isActive && activeLinkCss]}
       to={slugify(item.id, section.directory)}>
+      {isActive && <span css={activeLinkBefore} />}
+      {item.title}
+    </Link>
+  );
+};
+
+const createLinkDemo = ({
+  isActive,
+  item,
+  section,
+}: CreateLinkBaseProps): Node => {
+  return (
+    <Link css={[linkCss, isActive && activeLinkCss]}
+       to={slugify(item.id, section.directory)}>
       {isActive && <span css={activeLinkBefore} />}
       {item.title}
     </Link>
@@ -130,4 +145,5 @@ export {
   createLinkCommunity,
   createLinkDocs,
   createLinkTutorial,
+  createLinkDemo
 };
