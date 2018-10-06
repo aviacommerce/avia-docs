@@ -54,8 +54,9 @@ const style = {
 };
 
 const primaryStyle = {
-  backgroundColor: colors.brand,
-  color: colors.black,
+  backgroundColor: colors.lighter,
+  color: colors.white,
+  fontWeight: 'bold',
   padding: '10px 25px',
   whiteSpace: 'nowrap',
   transition: 'background-color 0.2s ease-out',
@@ -66,12 +67,12 @@ const primaryStyle = {
   },
 
   ':hover': {
-    backgroundColor: colors.white,
+    backgroundColor: colors.darker,
   },
 };
 
 const secondaryStyle = {
-  color: colors.brand,
+  color: colors.lighter,
   transition: 'color 0.2s ease-out',
 
   ':hover': {
