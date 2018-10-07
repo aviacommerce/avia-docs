@@ -11,6 +11,9 @@ permalink: docs/shipments.html
 Shipment also known as _packages_ are the actual shippable entities of an order that
 are delivered to the user. The `package` model represents the shipments in AviaCommerce.
 
+> Package or Shipment refers to the same entity, they have been used interchangeably
+  but should be considered the same.
+
 The package model has following attributes:
 - `tracking`: It is json field which contains information to track the package once,
     it is shipped.
@@ -64,6 +67,34 @@ The package states
 ```
 
 ## Package Items
+Every **Line Item** of the order which can be fulfilled(has enough stock), is shipped
+as a **Package Item** in the _Package_.
+
+The `package` entity has following attributes:
+- `number`: It is a UUID to identify the package.
+- `state`: It identifies the state, the states are `fulfilled` and `deferred`.
+- `quantity`: The number of units (of this item) that are currently "on hand" at the stock
+    location. The package can be shipped only when this becomes equal to the
+    quantity ordered. When the item is immediately fulfilled, this is same as the line_item's
+    quantity. Otherwise, this is the number of units that are currently "on hand" at the
+    origin stock location.
+- `delta`: It's the difference between the `:quantity` and the number of units "on
+    hand".
+- `tax`: The tax levied over (or included in) the cost of the line item, as applicable
+    when the line item is sold from the `:origin` stock location.
+- `shipping_tax`: The sum of all shipping taxes that apply for the shipping of this item from
+  the `origin` stock location.
+- `backordered?`: A boolean to check if the package item _will fulfill_ the
+  line item. If it's set to true then it will be fulfilled in the future. 
+  The (parent) package cannot be immediately shipped.
+  
+
+Relationships:
+- **__belongs to** `product`: Associates the product for which the package item is 
+    created.
+- **__belongs to** `line Item`: Associates the line item from the order.
+- **__belongs to** `package`: Associates the package in which the item would be shipped.
+
 
 [1]: /docs/shipments.html#package-states
 [2]: /docs/shipments.html#package-items
