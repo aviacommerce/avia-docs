@@ -83,5 +83,5 @@ The core team is monitoring for pull requests. We will review your pull request 
 We use inbuilt elixir formatter for code styling. This is without exception so far. We'll list anything if needed in this section in future.
 
 ### License
-By contributing to React, you agree that your contributions will be licensed under its MIT license.
+By contributing to Aviacommerce, you agree that your contributions will be licensed under its MIT license.
 
