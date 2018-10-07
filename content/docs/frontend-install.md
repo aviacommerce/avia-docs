@@ -6,10 +6,14 @@ next: backend-install.html
 
 ---
 
+Aviacommerce uses [AngularSpree](https://github.com/aviabird/angularspree) for front-end application.
+
+Below are the instructions on how to install angularspree and get started with Aviacommerce.
+
 - git clone `git@github.com:aviabird/angularspree.git`
 - cd angularspree
 - `yarn install` or `npm i`
-- `rename` `config/custom.example` to `config/custom`
+- rename `config/custom.example` to `config/custom`
 
 #### Running dev server
 - `yarn start:dev-ng-spree` to start angularspree dev server on `localhost:4200`
@@ -60,4 +64,4 @@ next: backend-install.html
         // @import './custom_themes/custom5/_custom5.scss'
     ```
 
-    > DO NOT IMPORT THE THEME INSIDE THE COMPONENTS TO USE VARIABLES. AS THAT WILL INCLUDE ENTIRE THEME INSIDE THAT COMPONENT. RESULTING IN BIGGER BUILDS.
+> DO NOT IMPORT THE THEME INSIDE THE COMPONENTS TO USE VARIABLES. AS THAT WILL INCLUDE ENTIRE THEME INSIDE THAT COMPONENT. RESULTING IN BIGGER BUILDS.
