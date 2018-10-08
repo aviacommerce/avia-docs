@@ -8,7 +8,9 @@ redirect_from:
   - "support.html"
 ---
 
-Some places where you can get help for AviaCommerce
+Some places where you can get help for AviaCommerce.
 
-* [Gitter Chat](https://gitter.im/aviabird/AviaCommerce)
-* Email - `hello@aviabird.com`
+If you want to participate actively share your ideas and concerns in our Gitter chat.
+* [Gitter Chat](https://gitter.im/avia-commerce)
+
+Want to have asynchronous communication, drop us an email at `hello@aviabird.com`.
