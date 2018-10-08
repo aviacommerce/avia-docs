@@ -11,7 +11,7 @@ redirect_from:
 
 [store front url](https://demo.aviacommerce.org)
 
-Try signing up and creating an account, you'll receive an order confirmation email.
+Try signing up and placing an order, you'll receive an order confirmation email.
 
 ### Admin Interface
 

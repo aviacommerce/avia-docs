@@ -92,8 +92,8 @@ The `package` entity has following attributes:
 Relationships:
 - **_belongs to_** `product`: Associates the product for which the package item is 
     created.
-- **_belongs to** `line Item`: Associates the line item from the order.
-- **_belongs to** `package`: Associates the package in which the item would be shipped.
+- **_belongs to_** `line Item`: Associates the line item from the order.
+- **_belongs to_** `package`: Associates the package in which the item would be shipped.
 
 
 [1]: /docs/shipments.html#package-states
