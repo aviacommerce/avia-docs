@@ -57,10 +57,10 @@ Variation theme defines how the products differ from each other. Variation theme
 
 ### Variants
 
-Variants are the products that differ by some attributes. Variants are Child Products component of variation relationship. To create variants it is necessary to select a variation theme and it is associated with parent product.
+Variants are the products that differ by some attributes. Variants are Child Products component of variation relationship. To create variants it is necessary to select a variation theme and it is associated with the parent product.
 
 
-> Note: Variant are also product as they are self referntial entity.
+> Note: Variants are also product as they are self-referential entity.
 --------
 
 ### Images
@@ -77,6 +77,6 @@ A taxonomy helps in creating the product categories.
 
 **Taxonomy :** Hierarchical list of Taxons. Taxonomy is associated to one root taxon.
 
-**Taxon :** Taxon is single node in the category tree. Each taxon can have many child taxon associated with it. A taxon can be associated with many Products.
+**Taxon :** Taxon is a single node in the category tree. Each taxon can have many child taxons associated with it. A taxon can be associated with many Products.
 
-`Nested Set Model` is used to create category hierarchy. All the logic for Taxon opertion is handled by [as_nested_set](https://github.com/SagarKarwande/as_nested_set) library.
+`Nested Set Model` is used to create category hierarchy. All the logic for a Taxon's operation is handled by [as_nested_set](https://github.com/SagarKarwande/as_nested_set) library.
