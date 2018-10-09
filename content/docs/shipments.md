@@ -78,10 +78,10 @@ The `package` entity has following attributes:
     quantity ordered. When the item is immediately fulfilled, this is same as the line_item's
     quantity. Otherwise, this is the number of units that are currently "on hand" at the
     origin stock location.
-- `delta`: It's the difference between the `:quantity` and the number of units "on
+- `delta`: It's the difference between the `quantity` and the number of units "on
     hand".
 - `tax`: The tax levied over (or included in) the cost of the line item, as applicable
-    when the line item is sold from the `:origin` stock location.
+    when the line item is sold from the `origin` stock location.
 - `shipping_tax`: The sum of all shipping taxes that apply for the shipping of this item from
   the `origin` stock location.
 - `backordered?`: A boolean to check if the package item _will fulfill_ the
@@ -90,10 +90,10 @@ The `package` entity has following attributes:
   
 
 Relationships:
-- **__belongs to** `product`: Associates the product for which the package item is 
+- **_belongs to_** `product`: Associates the product for which the package item is 
     created.
-- **__belongs to** `line Item`: Associates the line item from the order.
-- **__belongs to** `package`: Associates the package in which the item would be shipped.
+- **_belongs to_** `line Item`: Associates the line item from the order.
+- **_belongs to_** `package`: Associates the package in which the item would be shipped.
 
 
 [1]: /docs/shipments.html#package-states

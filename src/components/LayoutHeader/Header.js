@@ -211,7 +211,7 @@ const Header = ({location}: {location: Location}) => (
                 borderRadius: 15,
               },
             }}
-            href="https://www.demo.aviacommerce.org"
+            href="https://demo.aviacommerce.org/"
             target="_blank"
             rel="noopener">
             Demo

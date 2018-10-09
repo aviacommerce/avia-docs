@@ -1,7 +1,5 @@
 - title: Demo
   items:
-    - id: frontend
-      title: Frontend
-    - id: backend
-      title: Backend
-
+    - id: demo
+      title: Demo Page
+      
