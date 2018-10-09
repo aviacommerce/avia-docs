@@ -21,7 +21,11 @@ class DocSearch extends Component<{}, State> {
     // TODO Is this expensive? Should it be deferred until a user is about to search?
     // eslint-disable-next-line no-undef
     if (window.docsearch) {
-      console.log("Search not supported at the moment");
+      window.docsearch({
+        apiKey: '3ba00014ecb7299bcee59cae50524b2e',
+        indexName: 'aviacommerce',
+        inputSelector: '#algolia-doc-search',
+      });
     } else {
       console.warn('Search has failed to load and now is being disabled');
       this.setState({enabled: false});
