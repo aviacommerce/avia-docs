@@ -7,7 +7,7 @@ Long term vision of aviacommerce
 
 **Simplify e-commerce ecosystem by creating and unifying smart services and providing consistent, cost-effective solution to sellers helping them sell more.**
 
-There are many e-commerce suits available in the market, but none provides every essential service under one hood to complete e-commerce store. These individual services charge a lot and as a result the total costs for any SME store shoot up. For eg. For a million customers a smart CRM platform would $3000-5000/month, shipping service would cost $500/month, email service would cost $4000/month, sms service would cost $1800/month.
+There are many e-commerce suits available in the market, but none provides every essential service under one hood to complete e-commerce store. These individual services charge a lot and as a result the total costs for any SME store shoot up. For eg. For a million customers a smart CRM platform would $3000-5000/month, shipping software(excluding shipping charges) would cost $500/month, email service would cost $4000/month, sms service would cost $1800/month.
 
 If this system of e-commerce platform and their connected external services can be brought together under one roof, it will enable the clients to experience consistency in various services and, a huge reduction in cost. Our initial research shows the current cost of running an e-commerce system can be brought down by a factor of 7X in short-term and by 10X in long term.
 
