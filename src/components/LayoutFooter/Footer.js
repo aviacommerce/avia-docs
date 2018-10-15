@@ -75,7 +75,7 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
             <MetaTitle onDark={true}>Channels</MetaTitle>
             <ExternalFooterLink
-              href="https://www.demo.aviacommerce.org"
+              href="https://demo.aviacommerce.org"
               target="_blank"
               rel="noopener">
               Demo

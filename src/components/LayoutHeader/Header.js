@@ -194,35 +194,6 @@ const Header = ({location}: {location: Location}) => (
               }}
             />
           </a>
-          <a
-            css={{
-              padding: '5px 10px',
-              marginLeft: 10,
-              whiteSpace: 'nowrap',
-              ...fonts.small,
-
-              ':hover': {
-                color: colors.brand,
-              },
-
-              ':focus': {
-                outline: 0,
-                backgroundColor: colors.lighter,
-                borderRadius: 15,
-              },
-            }}
-            href="https://demo.aviacommerce.org/"
-            target="_blank"
-            rel="noopener">
-            Demo
-            <ExternalLinkSvg
-              cssProps={{
-                marginLeft: 5,
-                verticalAlign: -2,
-                color: colors.subtle,
-              }}
-            />
-          </a>
         </div>
       </div>
     </Container>
