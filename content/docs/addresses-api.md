@@ -8,14 +8,16 @@ permalink: docs/addresses-api.html
 
 > These api's are for signed in user only
 
+> Note: We have used [ExRegion](https://github.com/oyeb/ex_region) library for countries & states list. 
+
+
 ## List Address
 
----
 
 This api fetches the list of user's saved addresses. User can select one of addresses for delivery or edit the address in profile section.
 
 ```text
-GET /addresses/
+GET api/v1/addresses
 Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 Authorization: Bearer token
@@ -86,12 +88,11 @@ Authorization: Bearer token
   }
 }
 ```
-
 </details>
 
 ## Add/save user address
 
----
+
 
 This api is used to save an address for the signed in user.
 
@@ -188,12 +189,11 @@ Authorization: Bearer token
 
 ## Select Address
 
----
 
 This api is used to bind an address to a user's current order for delivery.
 
 ```text
-POST /orders/:id/select_address/
+POST api/v1/orders/:id/select_address/
 Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 Authorization: Bearer token
@@ -365,14 +365,135 @@ Authorization: Bearer token
   }
 }
 ```
-
 </details>
 
-## List Coutries
+## Edit/Update User Address
 
----
 
-This api fetches the list of all coutries's.
+
+This api is used to edit an address of a user.
+
+```text
+Put api/v1/addresses/:id
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+Authorization: "Bearer <token>"
+```
+
+### Parameters
+
+| Parameter     | Description   | Parameter Type| Data Type     |
+| ------------- | ------------- | ------------- | ------------- |
+|     id        | Address Id    | Path params   | inetger       |
+| address_line_1| User address  | body          | text          |
+| address_line_2| User address  | body          | text          |
+| first_name    | First name of user | body      | text          |
+| last_name     | Last name of user  | body      | text          |
+| zip_code      | zipcode of user address  | body     | text     |
+| state_id      | state for this address   | body     | integer  |
+| country_id    | country for this address | body     | integer  |
+| city          | city for this address    | body     | text     |
+| phone         | state for this address   | body     | text     |
+
+
+
+### Examples Request
+
+```
+{
+  "data": {
+    "type": "address", 
+     "id": 82,
+    "attributes": { 
+        "address_line_1": "4, paret drive",
+        "address_line_2": "Little Whinging",
+        "first_name": "Harrp",
+        "last_name": "Potter",
+        "zip_code": "123456",
+        "state_id": 1493,
+        "country_id": 80,
+        "city": "Pune",
+        "phone": "1212121212",
+        "alternate_phone": "1212121212"
+    }
+  }
+}
+```
+
+### Examples Response
+<details><summary> Example response (STATUS: 200 OK)</summary>
+
+```json
+{
+  "data": {
+    "attributes": {
+      "address_line_1": "4, paret drive",
+      "address_line_2": "Little Whinging",
+      "alternate_phone": "1212121212",
+      "city": "Pune",
+      "country": {
+        "iso_name": "United Kingdom",
+        "name": "United Kingdom"
+      },
+      "country_id": 80,
+      "first_name": "Harrp",
+      "last_name": "Potter",
+      "phone": "1212121212",
+      "state": {
+        "code": "GB-LND",
+        "name": "London, City of"
+      },
+      "state_id": 1493,
+      "zip_code": "123456"
+    },
+    "id": "82",
+    "links": {
+      "self": "/addresses/82"
+    },
+    "type": "address"
+  },
+  "jsonapi": {
+    "version": "1.0"
+  }
+}
+```
+</details>
+
+
+## Delete User Address
+
+
+
+This api is used to delete an address of a user.
+
+```text
+Delete api/v1/addresses/:id
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+Authorization: "Bearer <token>"
+```
+
+### Parameters
+
+| Parameter     | Description   | Parameter Type| Data Type     |
+| ------------- | ------------- | ------------- | ------------- |
+|     id        | Address Id    | Path params   | text          |
+
+
+### Examples Response
+<summary>(STATUS: 204 OK)</summary>
+
+```json
+NA
+```
+
+
+
+## List Countries
+
+
+
+This api fetches the list of all countries.
 
 ```text
 GET /api/v1/countries/
@@ -426,7 +547,7 @@ Accept: application/vnd.api+json
 
 ## List States
 
----
+
 
 This api fetches the list of all states for respective country(if any).
 
@@ -435,6 +556,14 @@ GET /api/v1/countries/:country_id/states
 Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
 ```
+
+### Parameters
+
+| Parameter     | Description   | Parameter Type| Data Type     |
+| ------------- | ------------- | ------------- | ------------- |
+| country_id    | country id for states  | Path params   | integer  |
+
+
 ###  Example Response
 
 <details><summary> Example response (STATUS: 200 OK)</summary>
