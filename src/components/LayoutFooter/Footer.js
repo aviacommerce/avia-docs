@@ -104,6 +104,18 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               rel="noopener">
               Twitter
             </ExternalFooterLink>
+            <ExternalFooterLink
+              href="https://instagram.com/aviacommerce"
+              target="_blank"
+              rel="noopener">
+              Instagram
+            </ExternalFooterLink>
+            <ExternalFooterLink
+              href="https://aviabird.us15.list-manage.com/subscribe?u=5bc67e9ba994773e66c535640&id=9f3f724984"
+              target="_blank"
+              rel="noopener">
+              Free trial signup
+            </ExternalFooterLink>
           </FooterNav>
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
             <MetaTitle onDark={true}>Community</MetaTitle>
