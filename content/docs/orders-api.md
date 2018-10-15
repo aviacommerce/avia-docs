@@ -25,17 +25,15 @@ an order is created in the `cart` state and returned.
 POST /api/v1/orders/current
 Content-Type : application/vnd.api+json
 Accept       : application/vnd.api+json
-Authorization: "Bearer <token>"
+Authorization: Bearer token
 ```
 
 ### Parameters
 `{}`
 
 ### Example Response
-<details><summary>Detail</summary>
-<p>
 
-`STATUS 200 OK`
+<details><summary> Example response (STATUS: 200 OK)</summary>
 
 ```json
 {
@@ -91,10 +89,7 @@ Accept       : application/vnd.api+json
 
 ### Example Response
 
-<details><summary>Detail</summary>
-<p>
-
-`STATUS 200 OK`
+<details><summary> Example response (STATUS: 200 OK)</summary>
 
 ```json
 {
@@ -135,27 +130,23 @@ Accept       : application/vnd.api+json
   }
 }
 ```
-</p>
 </details>
 
 
 ## Show All Orders
-This API will returns all orders belogns to user. 
+This API will returns all orders belongs to user. 
 
 ### Example Request
 ```
 GET api/v1/orders
 Content-Type : application/vnd.api+json
 Accept       : application/vnd.api+json
-Authorization: "Bearer <token>"
+Authorization: Bearer token
 ```
 
 ### Example Response
 
-<details><summary>Detail</summary>
-<p>
-
-`STATUS 200 OK`
+<details><summary> Example response (STATUS: 200 OK)</summary>
 
 ```json
 {
@@ -320,7 +311,7 @@ Authorization: "Bearer <token>"
   }
 }
 ```
-</p>
+
 </details>
 
 

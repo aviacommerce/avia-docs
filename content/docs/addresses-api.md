@@ -6,8 +6,6 @@ category: Reference
 permalink: docs/addresses-api.html
 ---
 
-> These api's are for signed in user only
-
 > Note: We have used [ExRegion](https://github.com/oyeb/ex_region) library for countries & states list. 
 
 
@@ -16,7 +14,7 @@ permalink: docs/addresses-api.html
 
 This api fetches the list of user's saved addresses. User can select one of addresses for delivery or edit the address in profile section.
 
-```text
+```
 GET api/v1/addresses
 Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
@@ -374,17 +372,17 @@ Authorization: Bearer token
 This api is used to edit an address of a user.
 
 ```text
-Put api/v1/addresses/:id
+Put api/v1/addresses/:address_id
 Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
-Authorization: "Bearer <token>"
+Authorization: Bearer token
 ```
 
 ### Parameters
 
 | Parameter     | Description   | Parameter Type| Data Type     |
 | ------------- | ------------- | ------------- | ------------- |
-|     id        | Address Id    | Path params   | inetger       |
+| address_id    | id of address | path params   | inetger       |
 | address_line_1| User address  | body          | text          |
 | address_line_2| User address  | body          | text          |
 | first_name    | First name of user | body      | text          |
@@ -393,7 +391,8 @@ Authorization: "Bearer <token>"
 | state_id      | state for this address   | body     | integer  |
 | country_id    | country for this address | body     | integer  |
 | city          | city for this address    | body     | text     |
-| phone         | state for this address   | body     | text     |
+| phone         | phone number for this address   | body     | text     |
+| id            | id of address  | body     | integer     |
 
 
 
@@ -412,7 +411,7 @@ Authorization: "Bearer <token>"
         "zip_code": "123456",
         "state_id": 1493,
         "country_id": 80,
-        "city": "Pune",
+        "city": "Little Whinging",
         "phone": "1212121212",
         "alternate_phone": "1212121212"
     }
@@ -430,7 +429,7 @@ Authorization: "Bearer <token>"
       "address_line_1": "4, paret drive",
       "address_line_2": "Little Whinging",
       "alternate_phone": "1212121212",
-      "city": "Pune",
+      "city": "Little Whinging",
       "country": {
         "iso_name": "United Kingdom",
         "name": "United Kingdom"
@@ -462,22 +461,20 @@ Authorization: "Bearer <token>"
 
 ## Delete User Address
 
-
-
 This api is used to delete an address of a user.
 
 ```text
-Delete api/v1/addresses/:id
+Delete api/v1/addresses/:address_id
 Content-Type: application/vnd.api+json
 Accept: application/vnd.api+json
-Authorization: "Bearer <token>"
+Authorization: Bearer token
 ```
 
 ### Parameters
 
 | Parameter     | Description   | Parameter Type| Data Type     |
 | ------------- | ------------- | ------------- | ------------- |
-|     id        | Address Id    | Path params   | text          |
+| address_id    | id of address | path params   | text          |
 
 
 ### Examples Response
@@ -487,10 +484,7 @@ Authorization: "Bearer <token>"
 NA
 ```
 
-
-
 ## List Countries
-
 
 
 This api fetches the list of all countries.
@@ -548,7 +542,6 @@ Accept: application/vnd.api+json
 ## List States
 
 
-
 This api fetches the list of all states for respective country(if any).
 
 ```text
@@ -561,7 +554,7 @@ Accept: application/vnd.api+json
 
 | Parameter     | Description   | Parameter Type| Data Type     |
 | ------------- | ------------- | ------------- | ------------- |
-| country_id    | country id for states  | Path params   | integer  |
+| country_id    | country id for states  | path params | integer |
 
 
 ###  Example Response
