@@ -51,7 +51,9 @@ Variation helps in creating products that differ by some attributes like `size`,
 
 ### Variation themes
 
-Variation theme defines how the products differ from each other. Variation theme can have many Option Types.
+Variation theme defines how the products differ from each other. Variation theme can have many Option Types. For eg. If a product is a garment then it should be associated with a variation theme `colour_size`. It's obvious from the name that this variation theme would have 2 option types `colour` and `size`. Variations would be permutations of these 2 option types. 
+
+Similarly, various types of products can be created based on variation theme for eg. digital products, very heavy products etc. However, all the products are considered to be deliverable products as of now. 
 
 --------
 
