@@ -17,6 +17,6 @@ Try signing up and placing an order, you'll receive an order confirmation email.
 
 [admin panel url](https://admin.aviacommerce.org/)
 
-`username`: `admin@snitch.com`
+`username`: `admin@aviacommerce.com`
 
-`password`: `wizard`
+`password`: `wizard123`
