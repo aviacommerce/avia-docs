@@ -33,7 +33,7 @@ Step-by-step guide to setup Avia Commerce locally for development and contributi
   - Though phoenix suggests version node 5.0.0 or higher but to avoid any unwanted
     issues we would suggest **v 9.11.0** or higher.
 
-### Extras
+### Wkhtmltopdf
   - [wkhtmltopdf][9] is a command line tool to render HTML into PDF. Used in generating 
   pdf invoices. Download [here][10].
 
