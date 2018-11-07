@@ -132,6 +132,7 @@ below, otherwise follow [Configuring Postgres][7].
 
   To run the `user interface` you will have to go through the [frontend installation][8].
   
+  
   in case you get `elm-make` command not found error on OS X from the project root:
   ```
   yarn global add elm@0.18.0 && elm-package install -y
