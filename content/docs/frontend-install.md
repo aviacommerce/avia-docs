@@ -12,7 +12,7 @@ Below are the instructions on how to install angularspree and get started with A
 
 - git clone `git@github.com:aviabird/angularspree.git`
 - cd angularspree
-- `yarn install` or `npm i`
+- `yarn install`
 - rename `config/custom.example` to `config/custom`
 
 #### Running dev server

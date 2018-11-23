@@ -33,7 +33,7 @@ Step-by-step guide to setup Avia Commerce locally for development and contributi
   - Though phoenix suggests version node 5.0.0 or higher but to avoid any unwanted
     issues we would suggest **v 9.11.0** or higher.
 
-### Extras
+### Wkhtmltopdf
   - [wkhtmltopdf][9] is a command line tool to render HTML into PDF. Used in generating 
   pdf invoices. Download [here][10].
 
@@ -131,6 +131,18 @@ below, otherwise follow [Configuring Postgres][7].
   - http://localhost:4000
 
   To run the `user interface` you will have to go through the [frontend installation][8].
+  
+  
+  in case you get `elm-make` command not found error on OS X from the project root:
+  ```
+  yarn global add elm@0.18.0 && elm-package install -y
+  ```
+   and then type this:
+  ```
+  cd apps/admin_app/assets && yarn install && cd elm && elm-package install --yes
+  ```
+
+  this will install old version of elm compatibile with the project
 
 
   ### Running Tests
