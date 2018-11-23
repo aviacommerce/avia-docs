@@ -7,15 +7,20 @@ redirect_from:
   - "demo/index.html"
 ---
 
-### Store front
+### Demo Store front
 
-[store front url](https://demo.aviacommerce.org)
+Check out the demo store we have created to showcase our store-front. 
 
-Try signing up and placing an order, you'll receive an order confirmation email.
+[aviastore.in](https://www.aviastore.in)
 
-### Admin Interface
+### Demo Admin Interface
 
-[admin panel url](https://admin.aviacommerce.org/)
+The above store front(aviastore) can be fully managed by the admin interface link below. 
+Try creating products, variants etc. 
+
+[admin panel url](https://aviastore.aviacommerce.net/)
+
+To access the admin interface use these credentials. 
 
 `username`: `admin@aviacommerce.com`
 
