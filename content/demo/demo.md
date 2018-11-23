@@ -11,7 +11,7 @@ redirect_from:
 
 Check out the demo store we have created to showcase our store-front. 
 
-[aviastore.in](https://aviastore.in)
+[aviastore.in](https://www.aviastore.in)
 
 ### Demo Admin Interface
 
