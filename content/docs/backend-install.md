@@ -55,7 +55,7 @@ We need to clone the `avia` repository on our local.
   The env file has keys, secrets and paths required by application to run. After
   putting all the details for different keys, source it.
     ```
-    > source local.env
+    > source env/local.env
     ```
   
   #### Image Upload Setup
