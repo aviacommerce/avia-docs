@@ -42,6 +42,7 @@ const colors = {
   error: '#ff6464', // yellow
   white: '#ffffff',
   black: '#000000',
+  codeHighlighter: '#ededed',
 };
 
 const SIZES = {
@@ -198,8 +199,8 @@ const sharedStyles = {
 
     '& .gatsby-highlight': {
       marginTop: 25,
-      marginLeft: -30,
-      marginRight: -30,
+      //marginLeft: -30,
+      //marginRight: -30,
       marginBottom: 25,
       paddingLeft: 15,
       paddingRight: 15,
