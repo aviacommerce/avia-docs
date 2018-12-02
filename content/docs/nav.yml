@@ -6,6 +6,8 @@
       title: Frontend Installation
     - id: backend-install
       title: Backend Installation
+    - id: common-errors
+      title: Common Errors
     # - id: frontend-deployment
     #   title: Frontend Deployment
     # - id: backend-deployment
