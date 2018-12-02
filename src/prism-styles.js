@@ -26,9 +26,9 @@ const prismColors = {
 };
 
 css.global('.gatsby-highlight', {
-  background: colors.dark,
-  color: colors.white,
-  borderRadius: 10,
+  background: colors.codeHighlighter,
+  color: colors.text,
+  borderRadius: 3,
   overflow: 'auto',
   tabSize: '1.5em',
 });
