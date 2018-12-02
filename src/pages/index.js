@@ -81,8 +81,8 @@ class Home extends Component {
         />
         <header
           css={{
-            backgroundColor: colors.dark,
-            color: colors.white,
+            backgroundColor: colors.gray,
+            color: colors.subtle,
           }}>
           <div
             css={{
@@ -95,8 +95,8 @@ class Home extends Component {
               },
 
               [media.greaterThan('xlarge')]: {
-                paddingTop: 95,
-                paddingBottom: 85,
+                paddingTop: 65,
+                paddingBottom: 65,
                 maxWidth: 1500, // Positioning of background logo
                 marginLeft: 'auto',
                 marginRight: 'auto',
@@ -143,7 +143,7 @@ class Home extends Component {
                     textAlign: 'center',
                     fontSize: 24,
                     letterSpacing: '0.01em',
-                    fontWeight: 200,
+                    fontWeight: 400,
 
                     [media.size('xsmall')]: {
                       fontSize: 16,
@@ -157,7 +157,7 @@ class Home extends Component {
                       fontSize: 30,
                     },
                   }}>
-                  Open Source E-Commerce framework
+                  Open Source E-Commerce Framework
                 </p>
                 <Flex
                   valign="center"
@@ -175,9 +175,10 @@ class Home extends Component {
                   </CtaItem>
                   <CtaItem>
                     <ButtonLink
-                      to="/blog/2018/08/02/avia-vision.html"
-                      type="secondary">
-                      Vision for Project
+                      to="https://aviabird.us15.list-manage.com/subscribe?u=5bc67e9ba994773e66c535640&id=9f3f724984"
+                      type="secondary"
+                      is_external={true}>
+                      Free Trial
                     </ButtonLink>
                   </CtaItem>
                 </Flex>
@@ -251,14 +252,14 @@ class Home extends Component {
                         {
                           '&&': {
                             // Make specificity higher than the site-wide h3 styles.
-                            color: colors.subtle,
+                            color: colors.darker,
                             paddingTop: 0,
                             fontWeight: 300,
                             fontSize: 20,
 
                             [media.greaterThan('xlarge')]: {
                               fontSize: 24,
-                              fontWeight: 200,
+                              fontWeight: 500,
                             },
                           },
                         },

@@ -36,12 +36,22 @@ const ButtonLink = ({children, type, ...rest}) => {
       break;
   }
 
-  return (
-    <Link {...rest} css={[style, typeStyle]}>
-      {children}
-      {type === 'secondary' && <ArrowSvg cssProps={{marginLeft: 10}} />}
-    </Link>
-  );
+  let is_external = rest.is_external || false;
+
+  if (is_external)
+    return(
+      <a href={rest.to} css={[style, typeStyle]} target="blank">
+        {children}
+      </a>
+    );
+
+  else
+    return (
+      <Link {...rest} css={[style, typeStyle]}>
+        {children}
+        {type === 'secondary' && <ArrowSvg cssProps={{marginLeft: 10}} />}
+      </Link>
+    );
 };
 
 const style = {
@@ -53,30 +63,38 @@ const style = {
   },
 };
 
-const primaryStyle = {
-  backgroundColor: colors.lighter,
-  color: colors.white,
-  fontWeight: 'bold',
+const commonStyle = {
+  borderRadius: 2,
+  transition: 'color 0.2s ease-out',
   padding: '10px 25px',
-  whiteSpace: 'nowrap',
-  transition: 'background-color 0.2s ease-out',
+  border: 'solid 1px',
+  borderColor: colors.dark,
+  boxShadow: 'rgba(0,0,0,0.2) 0px 1px 3px 1px',
 
   [media.greaterThan('xlarge')]: {
-    paddingTop: 15,
-    paddingBottom: 15,
+    paddingTop: 12,
+    paddingBottom: 12,
   },
+};
+
+const primaryStyle = {
+  ...commonStyle,
+  backgroundColor: colors.dark,
+  color: colors.white,
+  fontWeight: 'bold',
+  whiteSpace: 'nowrap',
 
   ':hover': {
-    backgroundColor: colors.darker,
+    //backgroundColor: colors.darker,
   },
 };
 
 const secondaryStyle = {
-  color: colors.lighter,
-  transition: 'color 0.2s ease-out',
+  ...commonStyle,
+  color: colors.dark,
 
   ':hover': {
-    color: colors.white,
+    //color: colors.white,
   },
 };
 

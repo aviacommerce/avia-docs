@@ -42,7 +42,7 @@ const colors = {
   error: '#ff6464', // yellow
   white: '#ffffff',
   black: '#000000',
-  codeHighlighter: '#ededed',
+  gray: '#ededed',
 };
 
 const SIZES = {
@@ -118,13 +118,14 @@ const fonts = {
 // Except when they must be used within nested CSS selectors.
 // This is the case for eg markdown content.
 const linkStyle = {
-  backgroundColor: hex2rgba(colors.brandLight, 0.3),
-  borderBottom: `1px solid ${hex2rgba(colors.black, 0.2)}`,
-  color: colors.text,
+  //backgroundColor: hex2rgba(colors.brandLight, 0.3),
+  //borderBottom: `1px solid ${hex2rgba(colors.black, 0.2)}`,
+  color: colors.dark,
+  fontWeight: 'bold',
 
   ':hover': {
-    backgroundColor: colors.brandLight,
-    borderBottomColor: colors.text,
+    //backgroundColor: colors.brandLight,
+    //borderBottomColor: colors.text,
   },
 };
 const sharedStyles = {
