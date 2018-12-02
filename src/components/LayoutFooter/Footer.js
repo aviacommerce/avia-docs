@@ -23,6 +23,7 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
       color: colors.white,
       paddingTop: 10,
       paddingBottom: 50,
+      fontSize: 14,
 
       [media.size('sidebarFixed')]: {
         paddingTop: 40,
@@ -123,27 +124,9 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               AviaCommerce(Product)
             </ExternalFooterLink>
           </FooterNav>
-          <FooterNav layoutHasSidebar={layoutHasSidebar}>
-            <MetaTitle onDark={true}>Community</MetaTitle>
-            {sectionListCommunity.map(section => (
-              <FooterLink
-                to={`/community/${section.items[0].id}.html`}
-                key={section.title}>
-                {section.title}
-              </FooterLink>
-            ))}
-          </FooterNav>
-          <FooterNav layoutHasSidebar={layoutHasSidebar}>
-            <MetaTitle onDark={true}>More</MetaTitle>
-            <FooterLink to="/blog/">Blog</FooterLink>
-            <FooterLink to="/acknowledgements.html">
-              Acknowledgements
-            </FooterLink>
-          </FooterNav>
         </div>
         <section
           css={{
-            paddingTop: 40,
             display: 'block !important', // Override 'Installation' <style> specifics
 
             [media.greaterThan('xlarge')]: {
@@ -160,16 +143,32 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               paddingTop: 40,
             },
           }}>
-          <a href="https://github.com/aviabird" target="_blank" rel="noopener">
-            Aviabird Open Source
-          </a>
-          <p
-            css={{
-              color: colors.subtleOnDark,
-              paddingTop: 15,
-            }}>
-            Copyright © 2018 Avibird Technologies.
-          </p>
+          <FooterNav layoutHasSidebar={layoutHasSidebar}>
+            <MetaTitle onDark={true}>Community</MetaTitle>
+            {sectionListCommunity.map(section => (
+              <FooterLink
+                to={`/community/${section.items[0].id}.html`}
+                key={section.title}>
+                {section.title}
+              </FooterLink>
+            ))}
+            <ExternalFooterLink
+              href="https://github.com/aviabird"
+              target="_blank"
+              rel="noopener">
+              Aviabird Open Source
+            </ExternalFooterLink>
+          </FooterNav>
+          <FooterNav layoutHasSidebar={layoutHasSidebar}>
+            <MetaTitle onDark={true}>More</MetaTitle>
+            <FooterLink to="/blog/">Blog</FooterLink>
+            <FooterLink to="/acknowledgements.html">
+              Acknowledgements
+            </FooterLink>
+            <FooterLink to="/blog/2018/08/02/avia-vision.html">
+              Vision For Project
+            </FooterLink>
+          </FooterNav>
         </section>
       </div>
     </Container>
