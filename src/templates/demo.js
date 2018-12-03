@@ -17,7 +17,7 @@ const Demo = ({data, location}) => (
     location={location}
     markdownRemark={data.markdownRemark}
     sectionList={sectionListDemo}
-    titlePostfix=" &ndash; React"
+    titlePostfix=" &ndash; AviaCommerce"
   />
 );
 

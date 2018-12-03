@@ -16,7 +16,7 @@ const PageNotFound = () => (
     <div css={sharedStyles.articleLayout.container}>
       <div css={sharedStyles.articleLayout.content}>
         <Header>Page Not Found</Header>
-        <TitleAndMetaTags title="React - Page Not Found" />
+        <TitleAndMetaTags title="AviaCommerce - Page Not Found" />
         <div css={sharedStyles.markdown}>
           <p>We couldn't find what you were looking for.</p>
           <p>
