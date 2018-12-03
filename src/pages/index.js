@@ -178,7 +178,7 @@ class Home extends Component {
                       to="https://aviabird.us15.list-manage.com/subscribe?u=5bc67e9ba994773e66c535640&id=9f3f724984"
                       type="secondary"
                       is_external={true}>
-                      Free Trial
+                      Schedule Demo
                     </ButtonLink>
                   </CtaItem>
                 </Flex>
