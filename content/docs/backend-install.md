@@ -108,6 +108,10 @@ below, otherwise follow [Configuring Postgres][7].
     ```
     > mix run priv/repo/seed/seeds.exs
     ```
+  - Create sample data
+    ```
+    > mix ecto.load.demo
+    ```
 
   ### Setting up Assets
   The admin application in Avia Commerce is phoenix application with html.  
