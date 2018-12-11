@@ -117,12 +117,6 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               rel="noopener">
               Free trial signup
             </ExternalFooterLink>
-            <ExternalFooterLink
-              href="https://aviacommerce.net"
-              target="_blank"
-              rel="noopener">
-              AviaCommerce(Product)
-            </ExternalFooterLink>
           </FooterNav>
         </div>
         <section
