@@ -37,6 +37,10 @@ Step-by-step guide to setup Avia Commerce locally for development and contributi
   - [wkhtmltopdf][9] is a command line tool to render HTML into PDF. Used in generating 
   pdf invoices. Download [here][10].
 
+### Elasticsearch
+ - Installation [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
+ - **optional** Installation [Kibana](https://www.elastic.co/downloads/kibana)
+
 ## Repo
 You can find all the repositories related to Avia Commerce [here][6]. 
 
