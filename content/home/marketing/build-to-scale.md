@@ -1,14 +1,10 @@
 ---
-title: Built to scale
+title: Sub-Millisecond Response Time
 order: 1
 ---
 
-AviaCommerce is written in [Elixir][elixir] and leverages [all][benefits-1] [the][benefitts-2] [benefits][benefits-3] of the battle tested [Erlang][erlang] runtime, chiefly: **high availability** and **massive scalability**.
+See how Phoenix can handle [2 million][benchmark] websocket connections.
 
-It is imperative to choose the right tool for every task: Erlang and E-commerce is a match made in computing heaven.
+AviaCommerce is written in Elixir and Phoenix framework. Thus, leveraging all the benefits of the battle tested Erlang runtime, chiefly: high availability and massive scalability which results in blazing fast response times.
 
-[elixir]: http://elixir-lang.org/
-[erlang]: https://www.erlang.org/
-[benefits-1]: https://en.wikipedia.org/wiki/Erlang_(programming_language) 
-[benefits-2]: https://stackoverflow.com/questions/1636455/where-is-erlang-used-and-why
-[benefits-3]: https://smyck.net/2012/04/22/why-erlang/
+[benchmark]: https://phoenixframework.org/blog/the-road-to-2-million-websocket-connections

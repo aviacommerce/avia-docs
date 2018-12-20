@@ -256,6 +256,7 @@ class Home extends Component {
                             paddingTop: 0,
                             fontWeight: 300,
                             fontSize: 20,
+                            minHeight: '3em',
 
                             [media.greaterThan('xlarge')]: {
                               fontSize: 24,
@@ -266,7 +267,11 @@ class Home extends Component {
                       ]}>
                       {column.title}
                     </h3>
-                    <div dangerouslySetInnerHTML={{__html: column.content}} />
+                    <div
+                      css={{
+                        color: colors.darker
+                      }}
+                      dangerouslySetInnerHTML={{__html: column.content}} />
                   </div>
                 ))}
               </div>
