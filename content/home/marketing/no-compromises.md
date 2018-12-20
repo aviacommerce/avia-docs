@@ -1,6 +1,11 @@
 ---
-title: Never say never
+title: Integrated with Elasticsearch
 order: 2
 ---
 
-That's our spirit! We want to make AviaCommerce the most useful, easy-to-use and performant e-commerce framework and we won't compromise on that.
+AviaCommerce comes integrated with [ElasticSearch][elasticsearch] and [Kibana][kibana] out of box. Elasticsearch  provides a realtime, scalable, multitenant capable full-text search capability.
+
+According to the [DB-Engines ranking][rankings], Elasticsearch is the most popular enterprise search engine.
+
+[elasticsearch]: https://www.elastic.co/products/elasticsearch
+[rankings]: https://db-engines.com/en/ranking/search+engine
