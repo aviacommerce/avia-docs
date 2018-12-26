@@ -116,55 +116,61 @@ below, otherwise follow [Configuring Postgres][7].
     ```
     > mix ecto.load.demo
     ```
+### Setting Elasticsearch Indexing
+ - keep elasticsearch running on port 9200 (if another port, then config that in local.env)
+ - From root
+    ```
+    > mix cmd --app snitch_core mix elasticsearch.build products --cluster Snitch.Tools.ElasticsearchCluster
+    ```
 
-  ### Setting up Assets
-  The admin application in Avia Commerce is phoenix application with html.  
-  To setup the assets:
-  ```
+### Setting up Assets
+The admin application in Avia Commerce is phoenix application with html.  
+To setup the assets:
+```
     > cd apps/addmin_app/assets
     > npm install
   ```
 
-  ### Running the server
+### Running the server
 
-  From the project root
-  ```
-  > iex -S mix phx.server
-  ```
+From the project root
+```
+> iex -S mix phx.server
+```
 
-  This will run two servers one for the `admin application` and the `api application`
-  server.  
+This will run two servers one for the `admin application` and the `api application`
+server.  
 
-  Browser Admin Interface
-  - http://localhost:4000
+Browser Admin Interface
+- http://localhost:4000
 
-  To run the `user interface` you will have to go through the [frontend installation][8].
-  
-  
-  in case you get `elm-make` command not found error on OS X from the project root:
-  ```
-  yarn global add elm@0.18.0 && elm-package install -y
-  ```
-   and then type this:
-  ```
-  cd apps/admin_app/assets && yarn install && cd elm && elm-package install --yes
-  ```
-
-  this will install old version of elm compatibile with the project
+To run the `user interface` you will have to go through the [frontend installation][8].
 
 
-  ### Running Tests
-  To run all the tests from your project root run the command
-  ```
-  > mix test
-  ```
+in case you get `elm-make` command not found error on OS X from the project root:
+```
+yarn global add elm@0.18.0 && elm-package install -y
+```
+ and then type this:
+```
+cd apps/admin_app/assets && yarn install && cd elm && elm-package install --yes
+```
 
-  You can also run the tests of individual applications from the root of those
-  applications. e.g. to run tests of core
-  ```
-  > cd apps/snitch_core
-  > mix test
-  ```
+this will install old version of elm compatibile with the project
+
+
+### Running Tests
+To run all the tests from your project root run the command
+```
+> mix test
+```
+
+You can also run the tests of individual applications from the root of those
+applications. e.g. to run tests of core
+```
+> cd apps/snitch_core
+> mix test
+```
 
 [1]: https://elixir-lang.org/install.html
 [2]: https://github.com/asdf-vm/asdf
