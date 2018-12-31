@@ -17,12 +17,12 @@ Step-by-step guide to setup Avia Commerce locally for development and contributi
 ## Setting Up the development environment
 
 ### Dockerfile
-- Dockerfile for development environment is `Dockerfile-dev` in the root of application.
+- Dockerfile for development environment is `Dockerfile-dev` in `config/docker/dev` directory.
 - Add values of all the environment variables in `Dockerfile-dev`.
 - Environment variables are those which have `ENV` written before them. Dummy values are already assigned to them.
 
 ### Docker Compose File
-- The docker compose file is `docker-compose-dev.yml` in the root of application.
+- The docker compose file is `docker-compose-dev.yml` in `config/docker/dev` directory.
 - Docker Compose file has `db` service for postgres database container.
 - Add `hostname` equal to postgres service in `apps/snitch_core/config/dev.exs` file which is `db` in our case.
 
@@ -42,7 +42,7 @@ Below command will
   - run containers using them
   - build aviacommerce webapp image and run it in a container
 ```
-> docker-compose -f docker-compose-dev.yml up
+> docker-compose -f config/docker/dev/docker-compose-dev.yml up --build
 ```
 
 After all the containers are up and running and the logs show localhost:4000 as available,
