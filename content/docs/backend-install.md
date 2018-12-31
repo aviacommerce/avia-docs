@@ -38,15 +38,25 @@ Step-by-step guide to setup Avia Commerce locally for development and contributi
   pdf invoices. Download [here][10].
 
 ### Elasticsearch
- - Installation [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
- - **optional** Installation [Kibana](https://www.elastic.co/downloads/kibana)
+ - Installation [Elasticsearch][11]
+ - **optional** Installation [Kibana][12]
 
 ## Repo
 You can find all the repositories related to Avia Commerce [here][6]. 
 
 We need to clone the `avia` repository on our local.  
+
+To clone [this repo][13], follow the instructions given in the GitHub help on [Cloning a repository][14], and choose one of the following submodule-cloning techniques:
+
+* Clone this repo and its submodule at the same, use the --recurse-submodules option:
+  `git clone --recurse-submodules https://github.com/aviacommerce/avia.git`
+
+* If you've already cloned this repo without its submodule, then run this command from the repo root:
+  `git submodule update --init --remote`
+
 ```
-> git clone git@github.com:aviacommerce/avia.git
+IMPORTANT: Whenever you update your repo, update the submodule as well:
+git pull; git submodule update --init --remote
 ```
 
 ## Setting up the Development Environment
@@ -182,3 +192,7 @@ applications. e.g. to run tests of core
 [8]: /docs/frontend-install.html
 [9]: https://wkhtmltopdf.org/
 [10]: https://wkhtmltopdf.org/downloads.html
+[11]: https://www.elastic.co/downloads/elasticsearch
+[12]: https://www.elastic.co/downloads/kibana
+[13]: https://github.com/aviacommerce/avia
+[14]: https://help.github.com/articles/cloning-a-repository/
