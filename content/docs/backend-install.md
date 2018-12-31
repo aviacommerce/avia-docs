@@ -7,6 +7,49 @@ next: deployment.html
 
 Step-by-step guide to setup Avia Commerce locally for development and contribution.
 
+# Setup using docker
+
+## Pre-requisites
+
+### Docker
+- Docker version 18.06.1 or higher is required.
+
+## Setting Up the development environment
+
+### Dockerfile
+- Dockerfile for development environment is `Dockerfile-dev` in the root of application.
+- Add values of all the environment variables in `Dockerfile-dev`.
+- Environment variables are those which have `ENV` written before them. Dummy values are already assigned to them.
+
+### Docker Compose File
+- The docker compose file is `docker-compose-dev.yml` in the root of application.
+- Docker Compose file has `db` service for postgres database container.
+- Add `hostname` equal to postgres service in `apps/snitch_core/config/dev.exs` file which is `db` in our case.
+
+```
+  config :snitch_core, Snitch.Repo,
+    adapter: Ecto.Adapters.Postgres,
+    username: "postgres",
+    password: "postgres",
+    database: "snitch_dev",
+    hostname: "db",
+    pool_size: 10
+```
+
+### Docker commands to run the containers
+Below command will 
+  - download all the required images
+  - run containers using them
+  - build aviacommerce webapp image and run it in a container
+```
+> docker-compose -f docker-compose-dev.yml up
+```
+
+After all the containers are up and running and the logs show localhost:4000 as available,
+click on `[http://localhost:4000][15]`
+
+# Manual Setup
+
 ## Pre-requisites
 
 ### Elixir
@@ -196,3 +239,4 @@ applications. e.g. to run tests of core
 [12]: https://www.elastic.co/downloads/kibana
 [13]: https://github.com/aviacommerce/avia
 [14]: https://help.github.com/articles/cloning-a-repository/
+[15]: http://localhost:4000
