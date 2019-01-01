@@ -2,10 +2,10 @@
   items:
     - id: getting-started
       title: Getting Started
-    - id: frontend-install
-      title: Frontend Installation
     - id: backend-install
       title: Backend Installation
+    - id: frontend-install
+      title: Frontend Installation
     - id: common-errors
       title: Common Errors
     # - id: frontend-deployment
