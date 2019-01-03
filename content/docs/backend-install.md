@@ -180,7 +180,7 @@ below, otherwise follow [Configuring Postgres][7].
 The admin application in Avia Commerce is phoenix application with html.  
 To setup the assets:
 ```
-    > cd apps/addmin_app/assets
+    > cd apps/admin_app/assets
     > npm install
   ```
 
