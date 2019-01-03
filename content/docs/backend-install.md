@@ -29,8 +29,8 @@ Step-by-step guide to setup Avia Commerce locally for development and contributi
 ```
   config :snitch_core, Snitch.Repo,
     adapter: Ecto.Adapters.Postgres,
-    username: "postgres",
-    password: "postgres",
+    username: "snitch_dev",
+    password: "snitch_dev",
     database: "snitch_dev",
     hostname: "db",
     pool_size: 10
