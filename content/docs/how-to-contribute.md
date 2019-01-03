@@ -38,7 +38,7 @@ The best way to get your bug fixed is to open a bug with clear description and d
 
 ### How to get in Touch
 
-* Gitter: [#support channel](https://gitter.im/avia-commerce/support)
+* Gitter: [#support channel](https://gitter.im/avia-commerce/Lobby)
 * Email: hello@aviabird.com
 
 ### Proposing a Change
