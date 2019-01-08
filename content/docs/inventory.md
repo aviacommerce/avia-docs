@@ -25,7 +25,6 @@ Inventory for a product can be tracked in the following way:
 This inventory tracking does not track any stock for a product. Products with this
 inventory tracking is always available for purchase.
 
-
 #### Track inventory by product
 
 This inventory tracking method tracks the stock for the product on which the
@@ -34,7 +33,6 @@ be tracked for the parent product.
 
 #### Track inventory by variant product
 
-Using this inventory tracking we can track the stock for each variant product
-separately
+Tracking inventory by variant will allow to track stock for each variant separately.
 
 ------
