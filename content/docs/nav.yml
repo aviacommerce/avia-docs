@@ -27,6 +27,8 @@
       title: Shipments
     - id: configurations
       title: Configurations
+    - id: inventory
+      title: Inventory
     # - id: promotions
     #   title: Promotions
     # - id: reports
