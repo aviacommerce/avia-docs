@@ -1,9 +1,9 @@
 ---
 id: inventory
 title: Inventory
+layout: docs
 permalink: docs/inventory.html
-prev: cdn-links.html
-next: orders.html
+prev: configurations.html
 ---
 
 ## Overview
@@ -34,5 +34,3 @@ be tracked for the parent product.
 #### Track inventory by variant product
 
 Tracking inventory by variant will allow to track stock for each variant separately.
-
-------

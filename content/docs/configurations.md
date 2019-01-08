@@ -4,7 +4,8 @@ title: Configurations
 layout: docs
 category: Reference
 permalink: docs/configurations.html
-
+next: inventory.html
+prev: shipments.html
 ---
 
 ## Overview

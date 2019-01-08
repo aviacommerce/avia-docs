@@ -5,6 +5,7 @@ layout: docs
 category: Reference
 permalink: docs/orders.html
 next: users.html
+prev: products.html
 ---
 
 ## Overview
@@ -55,7 +56,7 @@ Modules responsible for handling the business logic for `order` model.
 
 ## LineItems
   A line item is used to keep track of items in the order. It is a kind of a link
-  between the `order` and `products` with additional information in terms of purchase 
+  between the `order` and `products` with additional information in terms of purchase
   made.  
   When a product is added to an order it's price is set as the unit price of the line item.
   This is done so that in case the price of the product changes in future, the line item
@@ -86,7 +87,7 @@ Modules responsible for handling the business logic for `order` model.
 
   To move from one state to another the order has to meet certain conditions.
   To know about the conditions see the order state machine [_Order States_][8][_advanced_].
-  
+
   The `order` can be moved from one state to another using the exposed API call.
   A successful transition puts the order in the next state, whereas an unsuccessful
   one keeps the order in the same state and returns an error message.
