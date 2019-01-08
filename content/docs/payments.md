@@ -4,6 +4,7 @@ title: Payments
 layout: docs
 category: Reference
 permalink: docs/payments.html
+next: promotions.html
 ---
 
 ## Overview
@@ -59,7 +60,7 @@ for the payment made. e.g. Payubiz.
 - `raw_response`: The entire response from the payment source after the payment is done.
 
 Relationships:
-- **_belongs to_** `payment`: Forms the association with the payment record. 
+- **_belongs to_** `payment`: Forms the association with the payment record.
 
 Modules to handle business logic:
 - [`Snitch.Data.Model.HostedPayment`][7]: Exposes CRUD functions for hosted payment.

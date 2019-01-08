@@ -4,6 +4,7 @@ title: Shipments
 layout: docs
 category: Reference
 permalink: docs/shipments.html
+next: configuration.html
 
 ---
 
