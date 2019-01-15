@@ -23,12 +23,15 @@
       title: Users
     - id: payments
       title: Payments
+    - id: promotions
+      title: Promotions
+    - id: adjustments
+      title: Adjustments
     - id: shipments
       title: Shipments
     - id: configurations
       title: Configurations
-    # - id: promotions
-    #   title: Promotions
+    
     # - id: reports
     #   title: Reports
     # - id: extentions
