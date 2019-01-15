@@ -4,6 +4,7 @@ title: Payments
 layout: docs
 category: Reference
 permalink: docs/payments.html
+prev: users.html
 next: promotions.html
 ---
 

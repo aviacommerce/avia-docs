@@ -4,7 +4,8 @@ title: Users
 layout: docs
 category: Reference
 permalink: docs/users.html
-
+next: payments.html
+prev: orders.html
 ---
 
 ## Overview
@@ -109,10 +110,10 @@ be updated in the role_manifest.yml.
 
     The permission allows to manage everything related to the order but only read
     operations related to the product.
-    
+
     After this, we will create a role from the admin panel, let's call it "order_manager"
     who manages the order entity. While creating this role it can be assigned the permission "manage_orders".
-    
+
     A user XYZ can then be assigned the role "order_manager" and he can perform
     the above-mentioned controller actions.
 

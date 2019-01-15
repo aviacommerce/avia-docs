@@ -4,8 +4,8 @@ title: Shipments
 layout: docs
 category: Reference
 permalink: docs/shipments.html
-next: configuration.html
-
+next: configurations.html
+prev: payments.html
 ---
 
 ## Overview
@@ -55,7 +55,7 @@ effects.
 The package states
 - `pending`: The packages are created initially in this state.
 - `processing`: Once the order is confirmed by the user or the payment is made
-   the `packages` are in this stage. During this time the actual package preparation 
+   the `packages` are in this stage. During this time the actual package preparation
    are handled.
 - `shipped`: The packages are in this state once the admin marks the order as shipped.
 - `delivered`: The packages are marked as delivered once the actual delivery to the user happens.
@@ -86,12 +86,12 @@ The `package` entity has following attributes:
 - `shipping_tax`: The sum of all shipping taxes that apply for the shipping of this item from
   the `origin` stock location.
 - `backordered?`: A boolean to check if the package item _will fulfill_ the
-  line item. If it's set to true then it will be fulfilled in the future. 
+  line item. If it's set to true then it will be fulfilled in the future.
   The (parent) package cannot be immediately shipped.
-  
+
 
 Relationships:
-- **_belongs to_** `product`: Associates the product for which the package item is 
+- **_belongs to_** `product`: Associates the product for which the package item is
     created.
 - **_belongs to_** `line Item`: Associates the line item from the order.
 - **_belongs to_** `package`: Associates the package in which the item would be shipped.
