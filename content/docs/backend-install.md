@@ -169,8 +169,10 @@ below, otherwise follow [Configuring Postgres][7].
     ```
     > mix ecto.load.demo
     ```
+
 ### Setting Elasticsearch Indexing
  - keep elasticsearch running on port 9200 (if another port, then config that in local.env)
+ - Activate atleast one product in the admin panel, so that it is ready to be indexed. Variants need to be activated from options tab.
  - From root
     ```
     > mix cmd --app snitch_core mix elasticsearch.build products --cluster Snitch.Tools.ElasticsearchCluster
